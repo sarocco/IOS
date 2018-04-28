@@ -25,7 +25,7 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
         timeToTimeTableView.delegate = self
         timeToTimeTableView.dataSource = self
         timeToTimeTableView.reloadData()
-        // Do any additional setup after loading the view.
+        
     }
     
     //return the number of rows in a given section of a table view

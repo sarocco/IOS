@@ -17,6 +17,11 @@
 		418BEA7A2094D7BF00600E57 /* TimeToTimeATableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BEA792094D7BF00600E57 /* TimeToTimeATableViewCell.swift */; };
 		418BEA7C2094ED6D00600E57 /* TimeToTimeBTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BEA7B2094ED6D00600E57 /* TimeToTimeBTableViewCell.swift */; };
 		418BEA7E2094F5A400600E57 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BEA7D2094F5A400600E57 /* TeamViewController.swift */; };
+		418BEA842094F81A00600E57 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BEA7F2094F81900600E57 /* Match.swift */; };
+		418BEA852094F81A00600E57 /* DT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BEA802094F81900600E57 /* DT.swift */; };
+		418BEA862094F81A00600E57 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BEA812094F81A00600E57 /* Country.swift */; };
+		418BEA872094F81A00600E57 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BEA822094F81A00600E57 /* Player.swift */; };
+		418BEA882094F81A00600E57 /* Stadium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BEA832094F81A00600E57 /* Stadium.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		418BEA792094D7BF00600E57 /* TimeToTimeATableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeToTimeATableViewCell.swift; sourceTree = "<group>"; };
 		418BEA7B2094ED6D00600E57 /* TimeToTimeBTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeToTimeBTableViewCell.swift; sourceTree = "<group>"; };
 		418BEA7D2094F5A400600E57 /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
+		418BEA7F2094F81900600E57 /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		418BEA802094F81900600E57 /* DT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DT.swift; sourceTree = "<group>"; };
+		418BEA812094F81A00600E57 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		418BEA822094F81A00600E57 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		418BEA832094F81A00600E57 /* Stadium.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stadium.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,15 +76,20 @@
 			children = (
 				15A5A2E120895B8300AE32AA /* AppDelegate.swift */,
 				15A5A2E320895B8300AE32AA /* ViewController.swift */,
+				15A5A2F720896B9D00AE32AA /* MainCellTableViewCell.swift */,
 				15A5A2E520895B8300AE32AA /* Main.storyboard */,
 				15A5A2E820895B8300AE32AA /* Assets.xcassets */,
 				15A5A2EA20895B8300AE32AA /* LaunchScreen.storyboard */,
 				15A5A2ED20895B8300AE32AA /* Info.plist */,
 				418BEA772094D1EF00600E57 /* MatchViewController.swift */,
-				15A5A2F720896B9D00AE32AA /* MainCellTableViewCell.swift */,
 				418BEA792094D7BF00600E57 /* TimeToTimeATableViewCell.swift */,
 				418BEA7B2094ED6D00600E57 /* TimeToTimeBTableViewCell.swift */,
 				418BEA7D2094F5A400600E57 /* TeamViewController.swift */,
+				418BEA812094F81A00600E57 /* Country.swift */,
+				418BEA802094F81900600E57 /* DT.swift */,
+				418BEA822094F81A00600E57 /* Player.swift */,
+				418BEA832094F81A00600E57 /* Stadium.swift */,
+				418BEA7F2094F81900600E57 /* Match.swift */,
 			);
 			path = primerEtapaObligatorio;
 			sourceTree = "<group>";
@@ -151,12 +166,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				418BEA872094F81A00600E57 /* Player.swift in Sources */,
 				418BEA782094D1EF00600E57 /* MatchViewController.swift in Sources */,
 				418BEA7C2094ED6D00600E57 /* TimeToTimeBTableViewCell.swift in Sources */,
+				418BEA852094F81A00600E57 /* DT.swift in Sources */,
 				15A5A2E420895B8300AE32AA /* ViewController.swift in Sources */,
+				418BEA842094F81A00600E57 /* Match.swift in Sources */,
 				15A5A2E220895B8300AE32AA /* AppDelegate.swift in Sources */,
+				418BEA882094F81A00600E57 /* Stadium.swift in Sources */,
 				418BEA7A2094D7BF00600E57 /* TimeToTimeATableViewCell.swift in Sources */,
 				15A5A2F820896B9D00AE32AA /* MainCellTableViewCell.swift in Sources */,
+				418BEA862094F81A00600E57 /* Country.swift in Sources */,
 				418BEA7E2094F5A400600E57 /* TeamViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
