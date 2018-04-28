@@ -10,6 +10,7 @@ import UIKit
 
 class TeamViewController: UIViewController {
 
+    @IBOutlet weak var countryLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
