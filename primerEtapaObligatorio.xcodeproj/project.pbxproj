@@ -16,6 +16,7 @@
 		418BEA782094D1EF00600E57 /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BEA772094D1EF00600E57 /* MatchViewController.swift */; };
 		418BEA7A2094D7BF00600E57 /* TimeToTimeATableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BEA792094D7BF00600E57 /* TimeToTimeATableViewCell.swift */; };
 		418BEA7C2094ED6D00600E57 /* TimeToTimeBTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BEA7B2094ED6D00600E57 /* TimeToTimeBTableViewCell.swift */; };
+		418BEA7E2094F5A400600E57 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BEA7D2094F5A400600E57 /* TeamViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		418BEA772094D1EF00600E57 /* MatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewController.swift; sourceTree = "<group>"; };
 		418BEA792094D7BF00600E57 /* TimeToTimeATableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeToTimeATableViewCell.swift; sourceTree = "<group>"; };
 		418BEA7B2094ED6D00600E57 /* TimeToTimeBTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeToTimeBTableViewCell.swift; sourceTree = "<group>"; };
+		418BEA7D2094F5A400600E57 /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				15A5A2F720896B9D00AE32AA /* MainCellTableViewCell.swift */,
 				418BEA792094D7BF00600E57 /* TimeToTimeATableViewCell.swift */,
 				418BEA7B2094ED6D00600E57 /* TimeToTimeBTableViewCell.swift */,
+				418BEA7D2094F5A400600E57 /* TeamViewController.swift */,
 			);
 			path = primerEtapaObligatorio;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 				15A5A2E220895B8300AE32AA /* AppDelegate.swift in Sources */,
 				418BEA7A2094D7BF00600E57 /* TimeToTimeATableViewCell.swift in Sources */,
 				15A5A2F820896B9D00AE32AA /* MainCellTableViewCell.swift in Sources */,
+				418BEA7E2094F5A400600E57 /* TeamViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
