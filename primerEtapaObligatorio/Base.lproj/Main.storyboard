@@ -30,19 +30,19 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25 de junio - 18:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFo-Ud-Mhk">
-                                                    <rect key="frame" x="130" y="8.5" width="115" height="16"/>
+                                                    <rect key="frame" x="102.5" y="8.5" width="115" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Samara Arena" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WK3-96-pnQ">
-                                                    <rect key="frame" x="148.5" y="29.5" width="79" height="14.5"/>
+                                                    <rect key="frame" x="120.5" y="29.5" width="79" height="14.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grupo A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4v-26-dfi">
-                                                    <rect key="frame" x="168.5" y="49" width="39.5" height="12"/>
+                                                    <rect key="frame" x="140.5" y="49" width="39.5" height="12"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -54,7 +54,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rusia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzJ-9I-2Zb">
-                                                    <rect key="frame" x="219" y="162" width="48" height="24"/>
+                                                    <rect key="frame" x="164" y="162" width="48" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -67,7 +67,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rusia" translatesAutoresizingMaskIntoConstraints="NO" id="7R6-6t-AW3">
-                                                    <rect key="frame" x="275" y="106" width="80" height="80"/>
+                                                    <rect key="frame" x="220" y="106" width="80" height="80"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="80" id="Bg5-Ms-gyO"/>
                                                         <constraint firstAttribute="width" constant="80" id="NbK-bS-jIx"/>
@@ -175,13 +175,90 @@
                                 <rect key="frame" x="0.0" y="514" width="375" height="153"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="timeToTimeCell" id="Jsd-cv-p8K">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="timeToTimeCountryACell" id="Jsd-cv-p8K" customClass="TimeToTimeATableViewCell" customModule="primerEtapaObligatorio" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="40" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jsd-cv-p8K" id="SyV-Hx-DOD">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚽️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvR-8S-Ios">
+                                                    <rect key="frame" x="15" y="15" width="17" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luis Suarez" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Vy-wt-OaQ">
+                                                    <rect key="frame" x="42" y="15" width="65.5" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15'" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tu3-Sv-LPM">
+                                                    <rect key="frame" x="179.5" y="15" width="16.5" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Tu3-Sv-LPM" firstAttribute="centerX" secondItem="SyV-Hx-DOD" secondAttribute="centerX" id="DC3-P9-QAt"/>
+                                                <constraint firstItem="7Vy-wt-OaQ" firstAttribute="leading" secondItem="fvR-8S-Ios" secondAttribute="trailing" constant="10" id="E7m-R1-Iwm"/>
+                                                <constraint firstItem="fvR-8S-Ios" firstAttribute="centerY" secondItem="SyV-Hx-DOD" secondAttribute="centerY" id="RoD-2w-ORE"/>
+                                                <constraint firstItem="7Vy-wt-OaQ" firstAttribute="centerY" secondItem="SyV-Hx-DOD" secondAttribute="centerY" id="ToU-pZ-yFf"/>
+                                                <constraint firstItem="fvR-8S-Ios" firstAttribute="leading" secondItem="SyV-Hx-DOD" secondAttribute="leading" constant="15" id="Z8V-Bv-gWh"/>
+                                                <constraint firstItem="Tu3-Sv-LPM" firstAttribute="centerY" secondItem="SyV-Hx-DOD" secondAttribute="centerY" id="vzj-MU-Vsh"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="iconLabel" destination="RoD-2w-ORE" id="0Qc-86-5Da"/>
+                                            <outlet property="minuteLabel" destination="Tu3-Sv-LPM" id="bkJ-lo-8WH"/>
+                                            <outlet property="playerNameLabel" destination="7Vy-wt-OaQ" id="TAd-cM-tio"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="timeToTimeCountryBCell" id="4JA-Bz-r6s" customClass="TimeToTimeBTableViewCell" customModule="primerEtapaObligatorio" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="84" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4JA-Bz-r6s" id="KjP-xD-2Mb">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30'" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0R-wo-WLi">
+                                                    <rect key="frame" x="179" y="15" width="18" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daler Kusyayev" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJ1-WL-5yO">
+                                                    <rect key="frame" x="237" y="15" width="86" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFR-fb-RGM">
+                                                    <rect key="frame" x="342" y="11" width="23" height="21"/>
+                                                    <string key="text">🛑
+signo octagonal
+Unicode: U+1F6D1, UTF-8: F0 9F 9B 91</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="WJ1-WL-5yO" firstAttribute="leading" secondItem="h0R-wo-WLi" secondAttribute="trailing" constant="40" id="Bn1-Cz-AB8"/>
+                                                <constraint firstItem="WJ1-WL-5yO" firstAttribute="centerY" secondItem="KjP-xD-2Mb" secondAttribute="centerY" id="Qza-xv-une"/>
+                                                <constraint firstAttribute="trailing" secondItem="EFR-fb-RGM" secondAttribute="trailing" constant="10" id="Scb-5c-yej"/>
+                                                <constraint firstItem="h0R-wo-WLi" firstAttribute="centerX" secondItem="KjP-xD-2Mb" secondAttribute="centerX" id="TZf-qY-L8l"/>
+                                                <constraint firstItem="h0R-wo-WLi" firstAttribute="centerY" secondItem="KjP-xD-2Mb" secondAttribute="centerY" id="dmi-ot-KE9"/>
+                                                <constraint firstItem="EFR-fb-RGM" firstAttribute="centerY" secondItem="KjP-xD-2Mb" secondAttribute="centerY" id="iPx-H7-MHW"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="iconBLabel" destination="EFR-fb-RGM" id="cpH-0a-BOH"/>
+                                            <outlet property="minuteLabel" destination="h0R-wo-WLi" id="wUC-aY-Tn1"/>
+                                            <outlet property="playerNameLabel" destination="WJ1-WL-5yO" id="OiM-Ap-sVg"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -251,7 +328,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="90k-Ny-FGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1234" y="116"/>
+            <point key="canvasLocation" x="1232.8" y="115.59220389805098"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Vin-Cp-Rg2">
@@ -272,7 +349,7 @@
                                 <rect key="frame" x="0.0" y="274" width="375" height="240"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="i5r-Vt-2HN">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="i5r-Vt-2HN">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="i5r-Vt-2HN" id="dR7-9Q-htm">

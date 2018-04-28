@@ -22,9 +22,9 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        /*timeToTimeTableview.delegate = self
-        timeToTimeTableview.dataSource = self
-        timeToTimeTableview.reloadData()*/
+        timeToTimeTableView.delegate = self
+        timeToTimeTableView.dataSource = self
+        timeToTimeTableView.reloadData()
         // Do any additional setup after loading the view.
     }
     
@@ -32,14 +32,21 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "timeToTimeCell")
-        return cell!
+        var cellTable: UITableViewCell?
+        if (indexPath.row % 2 == 0)
+        {
+            cellTable = tableView.dequeueReusableCell(withIdentifier: "timeToTimeCountryACell")
+        }
+        else {
+            cellTable = tableView.dequeueReusableCell(withIdentifier: "timeToTimeCountryBCell")
+        }
+        
+        return cellTable!
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+        return 40
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
