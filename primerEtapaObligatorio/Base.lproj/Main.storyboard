@@ -283,6 +283,7 @@ Unicode: U+1F6D1, UTF-8: F0 9F 9B 91</string>
                                 <state key="normal" image="uruguay"/>
                                 <connections>
                                     <action selector="countryAButton:" destination="KLy-XS-SSR" eventType="touchUpInside" id="hl4-BE-eQF"/>
+                                    <segue destination="ffd-xT-TOq" kind="show" id="U7k-1A-EV9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -327,7 +328,6 @@ Unicode: U+1F6D1, UTF-8: F0 9F 9B 91</string>
                         <outlet property="stadiumName" destination="cRc-Za-ErS" id="3M4-Ig-Hc5"/>
                         <outlet property="timeToTimeTableView" destination="AFo-eF-uEV" id="OKP-yC-HYW"/>
                         <outlet property="vsLabel" destination="b2L-Pf-6BE" id="2dU-6b-TfY"/>
-                        <segue destination="ffd-xT-TOq" kind="show" identifier="" id="FHU-W1-0cX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="90k-Ny-FGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -353,7 +353,7 @@ Unicode: U+1F6D1, UTF-8: F0 9F 9B 91</string>
                                 <rect key="frame" x="0.0" y="274" width="375" height="240"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="titleId" id="i5r-Vt-2HN">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="titleId" id="i5r-Vt-2HN" customClass="TitleTableViewCell" customModule="primerEtapaObligatorio" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="i5r-Vt-2HN" id="dR7-9Q-htm">
@@ -373,7 +373,7 @@ Unicode: U+1F6D1, UTF-8: F0 9F 9B 91</string>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="playerId" id="hal-fa-nSL">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="playerId" id="hal-fa-nSL" customClass="PlayersTableViewCell" customModule="primerEtapaObligatorio" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hal-fa-nSL" id="jX3-Il-N6z">
@@ -409,7 +409,7 @@ Unicode: U+1F6D1, UTF-8: F0 9F 9B 91</string>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Pi1-b8-40D">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="dtId" id="Pi1-b8-40D" customClass="DTTableViewCell" customModule="primerEtapaObligatorio" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="116" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Pi1-b8-40D" id="O5G-sg-jZv">
@@ -417,14 +417,14 @@ Unicode: U+1F6D1, UTF-8: F0 9F 9B 91</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Khe-PD-U0j">
-                                                    <rect key="frame" x="15" y="12" width="22" height="21"/>
+                                                    <rect key="frame" x="15" y="11.5" width="22" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oscar Washington Tabárez" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcV-y4-ayE">
-                                                    <rect key="frame" x="52" y="11.5" width="206" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="52" y="14" width="173.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -461,6 +461,8 @@ Unicode: U+1F6D1, UTF-8: F0 9F 9B 91</string>
                     </view>
                     <connections>
                         <outlet property="countryLabel" destination="gjT-RA-Ldm" id="a6C-2g-grW"/>
+                        <outlet property="playersTableView" destination="qZh-JJ-DT4" id="8Bl-EJ-saz"/>
+                        <outlet property="shield" destination="f2Z-cg-OCq" id="TvV-6g-dPb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K2I-tc-jMR" userLabel="First Responder" sceneMemberID="firstResponder"/>

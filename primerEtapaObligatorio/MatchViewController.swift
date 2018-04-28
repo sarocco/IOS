@@ -25,8 +25,10 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBAction func countryAButton(_ sender: Any) {
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         timeToTimeTableView.delegate = self
         timeToTimeTableView.dataSource = self
         timeToTimeTableView.reloadData()
