@@ -113,7 +113,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="UCU World Cup" id="lVr-3i-W5h">
+                    <navigationItem key="navigationItem" title="UCU World Cup" id="lVr-3i-W5h" colorLabel="IBBuiltInLabel-Green">
                         <barButtonItem key="backBarButtonItem" title="Back" id="fvn-tR-6FD"/>
                     </navigationItem>
                     <connections>
@@ -125,10 +125,10 @@
             </objects>
             <point key="canvasLocation" x="460" y="117"/>
         </scene>
-        <!--View Controller-->
+        <!--Match View Controller-->
         <scene sceneID="dbT-Za-PEz">
             <objects>
-                <viewController storyboardIdentifier="IdentifierViewController" id="KLy-XS-SSR" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IdentifierViewController" id="KLy-XS-SSR" customClass="MatchViewController" customModule="primerEtapaObligatorio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zyD-CD-JXI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -175,41 +175,12 @@
                                 <rect key="frame" x="0.0" y="514" width="375" height="153"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="goalCell" rowHeight="30" id="09T-5E-l2a">
-                                        <rect key="frame" x="0.0" y="40" width="375" height="30"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="timeToTimeCell" id="Jsd-cv-p8K">
+                                        <rect key="frame" x="0.0" y="40" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="09T-5E-l2a" id="rwJ-mb-dRd" customClass="GoalsCellTableViewCell" customModule="primerEtapaObligatorio" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="29.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jsd-cv-p8K" id="SyV-Hx-DOD">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o6P-Zi-16W">
-                                                    <rect key="frame" x="30" y="-0.5" width="30" height="30.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="FQ8-59-4mS"/>
-                                                        <constraint firstAttribute="width" constant="30" id="vUC-fF-MoH"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luis Suarez" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pE-n7-Myq">
-                                                    <rect key="frame" x="70" y="7.5" width="65.5" height="14.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15'" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ho5-0g-t78">
-                                                    <rect key="frame" x="179.5" y="7.5" width="16.5" height="14.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="o6P-Zi-16W" firstAttribute="centerY" secondItem="rwJ-mb-dRd" secondAttribute="centerY" id="9Vl-Q0-XTT"/>
-                                                <constraint firstItem="Ho5-0g-t78" firstAttribute="centerY" secondItem="rwJ-mb-dRd" secondAttribute="centerY" id="bdi-DL-KjK"/>
-                                                <constraint firstItem="1pE-n7-Myq" firstAttribute="leading" secondItem="o6P-Zi-16W" secondAttribute="trailing" constant="10" id="ciA-L6-Svs"/>
-                                                <constraint firstItem="1pE-n7-Myq" firstAttribute="centerY" secondItem="rwJ-mb-dRd" secondAttribute="centerY" id="l3u-3G-FhR"/>
-                                                <constraint firstItem="o6P-Zi-16W" firstAttribute="leading" secondItem="rwJ-mb-dRd" secondAttribute="leading" constant="30" id="pSI-RI-4v4"/>
-                                                <constraint firstItem="Ho5-0g-t78" firstAttribute="centerX" secondItem="rwJ-mb-dRd" secondAttribute="centerX" id="ys7-Gp-FKJ"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -228,6 +199,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="URU vs RUS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7KU-rX-hgz">
                                 <rect key="frame" x="0.0" y="69" width="375" height="21"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -264,12 +236,22 @@
                     </view>
                     <navigationItem key="navigationItem" id="GSO-vp-3Vw"/>
                     <connections>
+                        <outlet property="countryAImage" destination="Jgh-g9-rr8" id="IRb-At-WoO"/>
+                        <outlet property="countryALabel" destination="Ujk-U8-MPN" id="l4B-KW-jBa"/>
+                        <outlet property="countryBImage" destination="SAV-Ke-Be7" id="mHb-Tw-BcJ"/>
+                        <outlet property="countryBLabel" destination="s9J-94-YUe" id="fXk-TG-gjM"/>
+                        <outlet property="countryVsCountryLabel" destination="7KU-rX-hgz" id="Ev2-sc-ZuN"/>
+                        <outlet property="dateTimeLabel" destination="baa-FM-ZQu" id="AF2-on-pgF"/>
+                        <outlet property="stadiumImage" destination="aqN-Fh-Dme" id="1Ek-kn-AbL"/>
+                        <outlet property="stadiumName" destination="cRc-Za-ErS" id="3M4-Ig-Hc5"/>
+                        <outlet property="timeToTimeTableView" destination="AFo-eF-uEV" id="OKP-yC-HYW"/>
+                        <outlet property="vsLabel" destination="b2L-Pf-6BE" id="2dU-6b-TfY"/>
                         <segue destination="ffd-xT-TOq" kind="show" id="FHU-W1-0cX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="90k-Ny-FGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1280.8" y="116.49175412293854"/>
+            <point key="canvasLocation" x="1234" y="116"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Vin-Cp-Rg2">

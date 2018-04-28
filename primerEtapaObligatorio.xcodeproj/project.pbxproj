@@ -13,7 +13,7 @@
 		15A5A2E920895B8300AE32AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15A5A2E820895B8300AE32AA /* Assets.xcassets */; };
 		15A5A2EC20895B8300AE32AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15A5A2EA20895B8300AE32AA /* LaunchScreen.storyboard */; };
 		15A5A2F820896B9D00AE32AA /* MainCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A5A2F720896B9D00AE32AA /* MainCellTableViewCell.swift */; };
-		418BEA722094009100600E57 /* GoalsCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BEA712094009100600E57 /* GoalsCellTableViewCell.swift */; };
+		418BEA782094D1EF00600E57 /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BEA772094D1EF00600E57 /* MatchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		15A5A2EB20895B8300AE32AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15A5A2ED20895B8300AE32AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15A5A2F720896B9D00AE32AA /* MainCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCellTableViewCell.swift; sourceTree = "<group>"; };
-		418BEA712094009100600E57 /* GoalsCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsCellTableViewCell.swift; sourceTree = "<group>"; };
+		418BEA772094D1EF00600E57 /* MatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +64,8 @@
 				15A5A2E820895B8300AE32AA /* Assets.xcassets */,
 				15A5A2EA20895B8300AE32AA /* LaunchScreen.storyboard */,
 				15A5A2ED20895B8300AE32AA /* Info.plist */,
+				418BEA772094D1EF00600E57 /* MatchViewController.swift */,
 				15A5A2F720896B9D00AE32AA /* MainCellTableViewCell.swift */,
-				418BEA712094009100600E57 /* GoalsCellTableViewCell.swift */,
 			);
 			path = primerEtapaObligatorio;
 			sourceTree = "<group>";
@@ -142,7 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				418BEA722094009100600E57 /* GoalsCellTableViewCell.swift in Sources */,
+				418BEA782094D1EF00600E57 /* MatchViewController.swift in Sources */,
 				15A5A2E420895B8300AE32AA /* ViewController.swift in Sources */,
 				15A5A2E220895B8300AE32AA /* AppDelegate.swift in Sources */,
 				15A5A2F820896B9D00AE32AA /* MainCellTableViewCell.swift in Sources */,
