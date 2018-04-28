@@ -8,7 +8,7 @@
 
 import UIKit
 
-class mainCellTableViewCell: UITableViewCell {
+class MainCellTableViewCell: UITableViewCell {
 
     //Outlets labels
     @IBOutlet weak var labelDate: UILabel!
