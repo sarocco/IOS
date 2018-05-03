@@ -14,6 +14,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     //Outlet tableView
     @IBOutlet weak var tableView: UITableView!
     
+    var countries = [ "uruguay", "rusia", "Argentina", "Brasil", "Belgica", "Alemania", "Inglaterra","Polonia"]
+    
     //constructor
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,12 +26,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     //return the number of rows in a given section of a table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return countries.count
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellMatch")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellMatch", for:indexPath) as? MainCellTableViewCell
+        cell?.labelCountryOne.text = countries[indexPath.row]
+        cell?.pictureCountryOne.image = UIImage(named: countries[indexPath.row])
+        cell?.labelCountryTwo.text = countries[indexPath.row]
+        cell?.pictureCountryTwo.image = UIImage(named: countries[indexPath.row])
         return cell!
     }
     
