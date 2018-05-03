@@ -1,11 +1,14 @@
 import UIKit
 
 class Stadium {
-    var name: String
-    //var stadiumImage: UIImage
+    var name = ""
+    var stadiumImage = UIImage()
 
-    init (name: String /*, stadiumImage: UIImage*/){
+    init (name: String , stadiumImage: UIImage){
+        
+//        let image = UIImage(named: "") para antes de instanciar un stadium
         self.name = name
+        self.stadiumImage = stadiumImage
         
     }
 }

@@ -15,7 +15,7 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var playersTableView: UITableView!
     
     let countries = ["Egipto", "Rusia", "Arabia Saudita","Uruguay"]
-    var rotationAngle: CGFloat = 0.0
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

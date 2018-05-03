@@ -13,18 +13,20 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var stadiumImage: UIImageView!
     @IBOutlet weak var stadiumName: UILabel!
     @IBOutlet weak var vsLabel: UILabel!
-    @IBOutlet weak var countryBImage: UIImageView!
     @IBOutlet weak var countryALabel: UILabel!
     @IBOutlet weak var countryBLabel: UILabel!
     @IBOutlet weak var dateTimeLabel: UILabel!
     @IBOutlet weak var timeToTimeTableView: UITableView!
-    
-    //es necesario poner un outlet del button?
-    
     @IBOutlet weak var countryAButton: UIButton!
-    @IBAction func countryAButton(_ sender: Any) {
+    @IBOutlet weak var countryBImage: UIButton!
+    
+    @IBAction func countryBButton(_ sender: UIButton!) {
+        performSegue(withIdentifier: "segueToTeamViewController", sender: self)
     }
     
+    @IBAction func countryAButton(_ sender: UIButton!) {
+        performSegue(withIdentifier: "segueToTeamViewController", sender: self)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
