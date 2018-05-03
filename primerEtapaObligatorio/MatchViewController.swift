@@ -56,11 +56,6 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return 40
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vController = storyboard?.instantiateViewController(withIdentifier: "IdentifierViewController")
-        navigationController?.show(vController!, sender: nil)
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

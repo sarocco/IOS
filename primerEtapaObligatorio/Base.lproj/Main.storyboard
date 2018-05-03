@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="otM-xQ-58s">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,59 +15,59 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="primerEtapaObligatorio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UHL-XS-tVK">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellMatch" rowHeight="200" id="xVy-Jx-RYh" customClass="MainCellTableViewCell" customModule="primerEtapaObligatorio" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="200"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xVy-Jx-RYh" id="v6B-85-TL7">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="199.66666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25 de junio - 18:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFo-Ud-Mhk">
-                                                    <rect key="frame" x="102.5" y="8.5" width="115" height="16"/>
+                                                    <rect key="frame" x="149.66666666666666" y="8.6666666666666643" width="114.99999999999997" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Samara Arena" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WK3-96-pnQ">
-                                                    <rect key="frame" x="120.5" y="29.5" width="79" height="14.5"/>
+                                                    <rect key="frame" x="167.66666666666666" y="29.666666666666668" width="79" height="14.333333333333332"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grupo A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4v-26-dfi">
-                                                    <rect key="frame" x="140.5" y="49" width="39.5" height="12"/>
+                                                    <rect key="frame" x="187.66666666666666" y="49" width="39.333333333333343" height="12"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uruguay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHT-aC-l51">
-                                                    <rect key="frame" x="108" y="87" width="74.5" height="24"/>
+                                                    <rect key="frame" x="108" y="87" width="74.666666666666686" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rusia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzJ-9I-2Zb">
-                                                    <rect key="frame" x="164" y="162" width="48" height="24"/>
+                                                    <rect key="frame" x="258" y="162" width="48" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uruguay" translatesAutoresizingMaskIntoConstraints="NO" id="HNf-jf-3MS">
-                                                    <rect key="frame" x="20" y="30" width="80" height="80.5"/>
+                                                    <rect key="frame" x="20" y="30.000000000000007" width="80" height="80.666666666666686"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="80" id="05z-An-Mk9"/>
                                                         <constraint firstAttribute="height" constant="80" id="PhI-0Q-qZL"/>
                                                     </constraints>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rusia" translatesAutoresizingMaskIntoConstraints="NO" id="7R6-6t-AW3">
-                                                    <rect key="frame" x="220" y="106" width="80" height="80"/>
+                                                    <rect key="frame" x="314" y="106" width="80" height="80"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="80" id="Bg5-Ms-gyO"/>
                                                         <constraint firstAttribute="width" constant="80" id="NbK-bS-jIx"/>
@@ -130,65 +130,58 @@
             <objects>
                 <viewController storyboardIdentifier="IdentifierViewController" id="KLy-XS-SSR" customClass="MatchViewController" customModule="primerEtapaObligatorio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zyD-CD-JXI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="samaraArena" translatesAutoresizingMaskIntoConstraints="NO" id="aqN-Fh-Dme">
-                                <rect key="frame" x="0.0" y="94" width="375" height="150"/>
+                                <rect key="frame" x="0.0" y="94" width="414" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="Kad-4X-1JZ"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rusia" translatesAutoresizingMaskIntoConstraints="NO" id="SAV-Ke-Be7">
-                                <rect key="frame" x="235" y="285" width="120" height="120"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="4cY-4h-ULL"/>
-                                    <constraint firstAttribute="height" constant="120" id="bqZ-2p-l1B"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2L-Pf-6BE">
-                                <rect key="frame" x="181" y="349.5" width="14" height="14.5"/>
+                                <rect key="frame" x="200.66666666666666" y="349.66666666666669" width="14" height="14.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Samara Arena" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRc-Za-ErS">
-                                <rect key="frame" x="145" y="249" width="85" height="16"/>
+                                <rect key="frame" x="164.66666666666666" y="249" width="85" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="100" verticalHuggingPriority="251" text="25 de junio - 18:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baa-FM-ZQu">
-                                <rect key="frame" x="138.5" y="462.5" width="99.5" height="13.5"/>
+                                <rect key="frame" x="158" y="462.66666666666669" width="99.666666666666686" height="13.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="40" sectionFooterHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="AFo-eF-uEV">
-                                <rect key="frame" x="0.0" y="514" width="375" height="153"/>
+                                <rect key="frame" x="0.0" y="514" width="414" height="222"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="timeToTimeCountryACell" id="Jsd-cv-p8K" customClass="TimeToTimeATableViewCell" customModule="primerEtapaObligatorio" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="40" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="40" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jsd-cv-p8K" id="SyV-Hx-DOD">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚽️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvR-8S-Ios">
-                                                    <rect key="frame" x="15" y="15" width="17" height="14.5"/>
+                                                    <rect key="frame" x="15" y="15" width="17" height="14.666666666666664"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luis Suarez" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Vy-wt-OaQ">
-                                                    <rect key="frame" x="42" y="15" width="65.5" height="14.5"/>
+                                                    <rect key="frame" x="42.000000000000007" y="15" width="65.666666666666686" height="14.666666666666664"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15'" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tu3-Sv-LPM">
-                                                    <rect key="frame" x="179.5" y="15" width="16.5" height="14.5"/>
+                                                    <rect key="frame" x="199" y="15" width="16.666666666666657" height="14.666666666666664"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -210,26 +203,26 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="timeToTimeCountryBCell" id="4JA-Bz-r6s" customClass="TimeToTimeBTableViewCell" customModule="primerEtapaObligatorio" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="84" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="84" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4JA-Bz-r6s" id="KjP-xD-2Mb">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30'" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0R-wo-WLi">
-                                                    <rect key="frame" x="179" y="15" width="18" height="14.5"/>
+                                                    <rect key="frame" x="198" y="15" width="18" height="14.666666666666664"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daler Kusyayev" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJ1-WL-5yO">
-                                                    <rect key="frame" x="237" y="15" width="86" height="14.5"/>
+                                                    <rect key="frame" x="256" y="15" width="86" height="14.666666666666664"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFR-fb-RGM">
-                                                    <rect key="frame" x="342" y="11" width="23" height="21"/>
+                                                    <rect key="frame" x="381" y="11" width="23" height="21"/>
                                                     <string key="text">🛑
 signo octagonal
 Unicode: U+1F6D1, UTF-8: F0 9F 9B 91</string>
@@ -256,19 +249,19 @@ Unicode: U+1F6D1, UTF-8: F0 9F 9B 91</string>
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uruguay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ujk-U8-MPN">
-                                <rect key="frame" x="47.5" y="425" width="65" height="21"/>
+                                <rect key="frame" x="47.666666666666657" y="425" width="65" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rusia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9J-94-YUe">
-                                <rect key="frame" x="274" y="425" width="42" height="21"/>
+                                <rect key="frame" x="312.66666666666669" y="425" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="URU vs RUS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7KU-rX-hgz">
-                                <rect key="frame" x="0.0" y="69" width="375" height="24"/>
+                                <rect key="frame" x="0.0" y="69" width="414" height="24"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <nil key="textColor"/>
@@ -283,35 +276,43 @@ Unicode: U+1F6D1, UTF-8: F0 9F 9B 91</string>
                                 <state key="normal" image="uruguay"/>
                                 <connections>
                                     <action selector="countryAButton:" destination="KLy-XS-SSR" eventType="touchUpInside" id="hl4-BE-eQF"/>
-                                    <segue destination="ffd-xT-TOq" kind="show" id="U7k-1A-EV9"/>
+                                    <segue destination="ffd-xT-TOq" kind="show" id="411-r5-zwN"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYf-0q-HqE">
+                                <rect key="frame" x="274" y="285" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="KqT-Zd-J2z"/>
+                                    <constraint firstAttribute="height" constant="120" id="aWr-S8-EdZ"/>
+                                </constraints>
+                                <state key="normal" image="rusia"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="lny-ZG-8wL" firstAttribute="trailing" secondItem="DYf-0q-HqE" secondAttribute="trailing" constant="20" id="1XA-QD-dx4"/>
                             <constraint firstItem="b2L-Pf-6BE" firstAttribute="centerX" secondItem="cRc-Za-ErS" secondAttribute="centerX" id="1hz-Mg-lZe"/>
                             <constraint firstItem="BfX-bJ-d62" firstAttribute="leading" secondItem="lny-ZG-8wL" secondAttribute="leading" constant="20" id="2Qk-in-KDq"/>
-                            <constraint firstItem="SAV-Ke-Be7" firstAttribute="top" secondItem="cRc-Za-ErS" secondAttribute="bottom" constant="20" id="2Xw-Qo-yRk"/>
                             <constraint firstItem="cRc-Za-ErS" firstAttribute="top" secondItem="aqN-Fh-Dme" secondAttribute="bottom" constant="5" id="2yY-Ic-hQv"/>
                             <constraint firstItem="cRc-Za-ErS" firstAttribute="centerX" secondItem="lny-ZG-8wL" secondAttribute="centerX" id="49y-f5-YDd"/>
                             <constraint firstItem="AFo-eF-uEV" firstAttribute="top" secondItem="b2L-Pf-6BE" secondAttribute="bottom" constant="150" id="5YQ-fe-Nh5"/>
                             <constraint firstItem="aqN-Fh-Dme" firstAttribute="trailing" secondItem="lny-ZG-8wL" secondAttribute="trailing" id="Azo-uD-nQa"/>
                             <constraint firstItem="baa-FM-ZQu" firstAttribute="centerX" secondItem="b2L-Pf-6BE" secondAttribute="centerX" id="BQ1-KS-b0o"/>
                             <constraint firstItem="Ujk-U8-MPN" firstAttribute="top" secondItem="BfX-bJ-d62" secondAttribute="bottom" constant="20" id="D70-cj-b87"/>
+                            <constraint firstItem="s9J-94-YUe" firstAttribute="top" secondItem="DYf-0q-HqE" secondAttribute="bottom" constant="20" id="GxE-1x-bxo"/>
                             <constraint firstItem="AFo-eF-uEV" firstAttribute="top" secondItem="lny-ZG-8wL" secondAttribute="top" constant="450" id="Oqu-bf-Vjs"/>
                             <constraint firstItem="AFo-eF-uEV" firstAttribute="leading" secondItem="lny-ZG-8wL" secondAttribute="leading" id="PsU-7g-vL9"/>
-                            <constraint firstItem="s9J-94-YUe" firstAttribute="top" secondItem="SAV-Ke-Be7" secondAttribute="bottom" constant="20" id="RBt-Ky-fEX"/>
                             <constraint firstItem="aqN-Fh-Dme" firstAttribute="top" secondItem="lny-ZG-8wL" secondAttribute="top" constant="30" id="Sio-xV-DTF"/>
                             <constraint firstItem="7KU-rX-hgz" firstAttribute="top" secondItem="lny-ZG-8wL" secondAttribute="top" constant="5" id="W61-cl-ijQ"/>
                             <constraint firstItem="BfX-bJ-d62" firstAttribute="top" secondItem="cRc-Za-ErS" secondAttribute="bottom" constant="20" id="ZCN-Lq-E4g"/>
-                            <constraint firstItem="s9J-94-YUe" firstAttribute="centerX" secondItem="SAV-Ke-Be7" secondAttribute="centerX" id="aud-DT-Skx"/>
                             <constraint firstItem="AFo-eF-uEV" firstAttribute="bottom" secondItem="lny-ZG-8wL" secondAttribute="bottom" id="bqM-v2-uMd"/>
                             <constraint firstItem="7KU-rX-hgz" firstAttribute="leading" secondItem="lny-ZG-8wL" secondAttribute="leading" id="eNq-kj-tHA"/>
                             <constraint firstItem="AFo-eF-uEV" firstAttribute="trailing" secondItem="lny-ZG-8wL" secondAttribute="trailing" id="ehD-3k-0Ot"/>
                             <constraint firstItem="baa-FM-ZQu" firstAttribute="bottom" secondItem="Ujk-U8-MPN" secondAttribute="bottom" constant="30" id="l4B-Ei-sKy"/>
                             <constraint firstItem="Ujk-U8-MPN" firstAttribute="centerX" secondItem="BfX-bJ-d62" secondAttribute="centerX" id="oKC-CF-2bL"/>
-                            <constraint firstItem="lny-ZG-8wL" firstAttribute="trailing" secondItem="SAV-Ke-Be7" secondAttribute="trailing" constant="20" id="odY-fb-ez0"/>
                             <constraint firstItem="lny-ZG-8wL" firstAttribute="trailing" secondItem="7KU-rX-hgz" secondAttribute="trailing" id="pRZ-8a-hbd"/>
+                            <constraint firstItem="DYf-0q-HqE" firstAttribute="top" secondItem="cRc-Za-ErS" secondAttribute="bottom" constant="20" id="pdD-bl-aEi"/>
+                            <constraint firstItem="s9J-94-YUe" firstAttribute="centerX" secondItem="DYf-0q-HqE" secondAttribute="centerX" id="qPl-lQ-LD7"/>
                             <constraint firstItem="aqN-Fh-Dme" firstAttribute="leading" secondItem="lny-ZG-8wL" secondAttribute="leading" id="tNX-c2-Hf7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lny-ZG-8wL"/>
@@ -320,7 +321,6 @@ Unicode: U+1F6D1, UTF-8: F0 9F 9B 91</string>
                     <connections>
                         <outlet property="countryAButton" destination="BfX-bJ-d62" id="u10-YS-VsD"/>
                         <outlet property="countryALabel" destination="Ujk-U8-MPN" id="l4B-KW-jBa"/>
-                        <outlet property="countryBImage" destination="SAV-Ke-Be7" id="mHb-Tw-BcJ"/>
                         <outlet property="countryBLabel" destination="s9J-94-YUe" id="fXk-TG-gjM"/>
                         <outlet property="countryVsCountryLabel" destination="7KU-rX-hgz" id="Ev2-sc-ZuN"/>
                         <outlet property="dateTimeLabel" destination="baa-FM-ZQu" id="AF2-on-pgF"/>
@@ -339,29 +339,29 @@ Unicode: U+1F6D1, UTF-8: F0 9F 9B 91</string>
             <objects>
                 <viewController storyboardIdentifier="TeamViewController" id="ffd-xT-TOq" customClass="TeamViewController" customModule="primerEtapaObligatorio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DMu-7W-hhW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uruguay" translatesAutoresizingMaskIntoConstraints="NO" id="f2Z-cg-OCq">
-                                <rect key="frame" x="112.5" y="89" width="150" height="150"/>
+                                <rect key="frame" x="132" y="89" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="Nsf-4s-wAJ"/>
                                     <constraint firstAttribute="height" constant="150" id="oJq-n4-KaE"/>
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qZh-JJ-DT4">
-                                <rect key="frame" x="0.0" y="274" width="375" height="240"/>
+                                <rect key="frame" x="0.0" y="274" width="414" height="312"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="titleId" id="i5r-Vt-2HN" customClass="TitleTableViewCell" customModule="primerEtapaObligatorio" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="i5r-Vt-2HN" id="dR7-9Q-htm">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Players" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKG-Py-U0g">
-                                                    <rect key="frame" x="15" y="12" width="55.5" height="20.5"/>
+                                                    <rect key="frame" x="14.999999999999996" y="12.000000000000002" width="55.666666666666657" height="20.666666666666671"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -374,10 +374,10 @@ Unicode: U+1F6D1, UTF-8: F0 9F 9B 91</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="playerId" id="hal-fa-nSL" customClass="PlayersTableViewCell" customModule="primerEtapaObligatorio" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="72" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hal-fa-nSL" id="jX3-Il-N6z">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G9Y-v4-d4j">
@@ -393,7 +393,7 @@ Unicode: U+1F6D1, UTF-8: F0 9F 9B 91</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Galatasaray" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUW-Av-9Js">
-                                                    <rect key="frame" x="38" y="24" width="67" height="14.5"/>
+                                                    <rect key="frame" x="38" y="24" width="67" height="14.666666666666664"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -410,20 +410,20 @@ Unicode: U+1F6D1, UTF-8: F0 9F 9B 91</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="dtId" id="Pi1-b8-40D" customClass="DTTableViewCell" customModule="primerEtapaObligatorio" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="116" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="116" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Pi1-b8-40D" id="O5G-sg-jZv">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Khe-PD-U0j">
-                                                    <rect key="frame" x="15" y="11.5" width="22" height="20.5"/>
+                                                    <rect key="frame" x="15" y="11.666666666666666" width="22" height="20.333333333333336"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oscar Washington Tabárez" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcV-y4-ayE">
-                                                    <rect key="frame" x="52" y="14" width="173.5" height="17"/>
+                                                    <rect key="frame" x="51.999999999999986" y="14" width="173.66666666666663" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -440,11 +440,31 @@ Unicode: U+1F6D1, UTF-8: F0 9F 9B 91</string>
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uruguay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjT-RA-Ldm">
-                                <rect key="frame" x="10" y="64" width="74.5" height="24"/>
+                                <rect key="frame" x="10" y="64" width="74.666666666666671" height="24"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SIM-t9-ct1">
+                                <rect key="frame" x="0.0" y="586" width="414" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="04Q-91-4Bf">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="y8h-0B-IZV">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -452,10 +472,14 @@ Unicode: U+1F6D1, UTF-8: F0 9F 9B 91</string>
                             <constraint firstItem="qZh-JJ-DT4" firstAttribute="top" secondItem="f2Z-cg-OCq" secondAttribute="bottom" constant="35" id="6gX-dZ-fEk"/>
                             <constraint firstItem="D4z-FK-atm" firstAttribute="trailing" secondItem="qZh-JJ-DT4" secondAttribute="trailing" id="CX5-B5-QUG"/>
                             <constraint firstItem="f2Z-cg-OCq" firstAttribute="centerX" secondItem="D4z-FK-atm" secondAttribute="centerX" id="Cch-Ud-264"/>
+                            <constraint firstItem="D4z-FK-atm" firstAttribute="trailing" secondItem="SIM-t9-ct1" secondAttribute="trailing" id="P0S-vl-ma6"/>
                             <constraint firstItem="gjT-RA-Ldm" firstAttribute="top" secondItem="D4z-FK-atm" secondAttribute="top" id="Pkg-hE-0FR"/>
                             <constraint firstItem="qZh-JJ-DT4" firstAttribute="leading" secondItem="D4z-FK-atm" secondAttribute="leading" id="aAO-2t-pqk"/>
+                            <constraint firstItem="SIM-t9-ct1" firstAttribute="top" secondItem="qZh-JJ-DT4" secondAttribute="bottom" id="bzd-h1-RsR"/>
                             <constraint firstItem="f2Z-cg-OCq" firstAttribute="top" secondItem="D4z-FK-atm" secondAttribute="top" constant="25" id="jNf-l0-bbX"/>
-                            <constraint firstItem="D4z-FK-atm" firstAttribute="bottom" secondItem="qZh-JJ-DT4" secondAttribute="bottom" constant="153" id="uJM-Zo-JOc"/>
+                            <constraint firstItem="SIM-t9-ct1" firstAttribute="leading" secondItem="D4z-FK-atm" secondAttribute="leading" id="jgu-Ir-q9N"/>
+                            <constraint firstItem="D4z-FK-atm" firstAttribute="bottom" secondItem="SIM-t9-ct1" secondAttribute="bottom" id="q55-7f-jVA"/>
+                            <constraint firstItem="D4z-FK-atm" firstAttribute="bottom" secondItem="qZh-JJ-DT4" secondAttribute="bottom" constant="150" id="uJM-Zo-JOc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="D4z-FK-atm"/>
                     </view>
@@ -467,7 +491,7 @@ Unicode: U+1F6D1, UTF-8: F0 9F 9B 91</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K2I-tc-jMR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2021.5999999999999" y="116.49175412293854"/>
+            <point key="canvasLocation" x="2020.289855072464" y="115.7608695652174"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Y78-z8-O5Y">
@@ -475,7 +499,7 @@ Unicode: U+1F6D1, UTF-8: F0 9F 9B 91</string>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="otM-xQ-58s" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4h7-sI-2kY">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

@@ -9,18 +9,19 @@
 import UIKit
 
 class TeamViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     @IBOutlet weak var countryLabel: UILabel!
     @IBOutlet weak var shield: UIImageView!
     @IBOutlet weak var playersTableView: UITableView!
     
+    let countries = ["Egipto", "Rusia", "Arabia Saudita","Uruguay"]
+    var rotationAngle: CGFloat = 0.0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         playersTableView.delegate = self
         playersTableView.dataSource = self
         playersTableView.reloadData()
-        
     }
     
     //return the number of rows in a given section of a table view
@@ -44,11 +45,6 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
         return 50
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vController = storyboard?.instantiateViewController(withIdentifier: "TeamViewController")
-        navigationController?.show(vController!, sender: nil)
-    }
-        // Do any additional setup after loading the view.
 }
 
     /*
