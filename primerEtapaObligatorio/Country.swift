@@ -1,15 +1,15 @@
-import UIKit
+
 class Country {
     var name: String
     var player: [Player]
     var dt:DT
-    //var shield: UIImageView
+    var shield: String
 
-    init (name: String, player: [Player], dt:DT, shield:UIImageView){
+    init (name: String, player: [Player], dt:DT, shield: String){
         self.name = name
         self.player = player
         self.dt = dt
-        //shield = UIImageView (named:self.name)!
+        self.shield = shield
     }
 }
 

@@ -1,18 +1,31 @@
 import Foundation
+
 class Match {
-    var date: NSDate
+    var date: String
     var stadium: Stadium
     var group: String
     var countryA: Country
     var countryB: Country
-    var result: [Int]
+    var resultCountryA: Int?
+    var resultCountryB : Int?
     
-    init (date: NSDate, group:String,stadium: Stadium,  countryA:Country, countryB: Country, result: [Int] ){
+    //Match without results
+    init (date: String, group:String,stadium: Stadium, countryA:Country, countryB: Country) {
         self.date = date
         self.stadium = stadium
         self.group = group
         self.countryA = countryA
         self.countryB = countryB
-        self.result = result
+    }
+    
+    //Match with results
+    init (date: String, group:String,stadium: Stadium, countryA:Country, countryB: Country, resultCountryA: Int, resultCountryB: Int) {
+        self.date = date
+        self.stadium = stadium
+        self.group = group
+        self.countryA = countryA
+        self.countryB = countryB
+        self.resultCountryA = resultCountryA
+        self.resultCountryB = resultCountryB
     }
 }
