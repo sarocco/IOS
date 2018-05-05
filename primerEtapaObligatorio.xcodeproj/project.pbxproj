@@ -19,13 +19,12 @@
 		418BEA7C2094ED6D00600E57 /* TimeToTimeBTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BEA7B2094ED6D00600E57 /* TimeToTimeBTableViewCell.swift */; };
 		418BEA7E2094F5A400600E57 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BEA7D2094F5A400600E57 /* TeamViewController.swift */; };
 		418BEA842094F81A00600E57 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BEA7F2094F81900600E57 /* Match.swift */; };
-		418BEA852094F81A00600E57 /* DT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BEA802094F81900600E57 /* DT.swift */; };
 		418BEA862094F81A00600E57 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BEA812094F81A00600E57 /* Country.swift */; };
 		418BEA872094F81A00600E57 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BEA822094F81A00600E57 /* Player.swift */; };
 		418BEA882094F81A00600E57 /* Stadium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BEA832094F81A00600E57 /* Stadium.swift */; };
-		418BEA8A20951F3500600E57 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BEA8920951F3500600E57 /* TitleTableViewCell.swift */; };
 		418BEA8C20951F5B00600E57 /* PlayersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BEA8B20951F5B00600E57 /* PlayersTableViewCell.swift */; };
-		418BEA8E20951F6900600E57 /* DTTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BEA8D20951F6900600E57 /* DTTableViewCell.swift */; };
+		41E5D5AA209E42CC00BE3FC0 /* DT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E5D5A9209E42CC00BE3FC0 /* DT.swift */; };
+		41E5D5AC209E42F800BE3FC0 /* DTTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E5D5AB209E42F800BE3FC0 /* DTTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,13 +42,12 @@
 		418BEA7B2094ED6D00600E57 /* TimeToTimeBTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeToTimeBTableViewCell.swift; sourceTree = "<group>"; };
 		418BEA7D2094F5A400600E57 /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 		418BEA7F2094F81900600E57 /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
-		418BEA802094F81900600E57 /* DT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DT.swift; sourceTree = "<group>"; };
 		418BEA812094F81A00600E57 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		418BEA822094F81A00600E57 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		418BEA832094F81A00600E57 /* Stadium.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stadium.swift; sourceTree = "<group>"; };
-		418BEA8920951F3500600E57 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		418BEA8B20951F5B00600E57 /* PlayersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersTableViewCell.swift; sourceTree = "<group>"; };
-		418BEA8D20951F6900600E57 /* DTTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTTableViewCell.swift; sourceTree = "<group>"; };
+		41E5D5A9209E42CC00BE3FC0 /* DT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DT.swift; path = ../../../../Downloads/classSwift/DT.swift; sourceTree = "<group>"; };
+		41E5D5AB209E42F800BE3FC0 /* DTTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,13 +93,12 @@
 				418BEA7B2094ED6D00600E57 /* TimeToTimeBTableViewCell.swift */,
 				418BEA7D2094F5A400600E57 /* TeamViewController.swift */,
 				418BEA812094F81A00600E57 /* Country.swift */,
-				418BEA802094F81900600E57 /* DT.swift */,
+				41E5D5AB209E42F800BE3FC0 /* DTTableViewCell.swift */,
+				41E5D5A9209E42CC00BE3FC0 /* DT.swift */,
 				418BEA822094F81A00600E57 /* Player.swift */,
 				418BEA832094F81A00600E57 /* Stadium.swift */,
 				418BEA7F2094F81900600E57 /* Match.swift */,
-				418BEA8920951F3500600E57 /* TitleTableViewCell.swift */,
 				418BEA8B20951F5B00600E57 /* PlayersTableViewCell.swift */,
-				418BEA8D20951F6900600E57 /* DTTableViewCell.swift */,
 			);
 			path = primerEtapaObligatorio;
 			sourceTree = "<group>";
@@ -180,20 +177,19 @@
 			files = (
 				418BEA872094F81A00600E57 /* Player.swift in Sources */,
 				418BEA782094D1EF00600E57 /* MatchViewController.swift in Sources */,
-				418BEA8A20951F3500600E57 /* TitleTableViewCell.swift in Sources */,
 				418BEA7C2094ED6D00600E57 /* TimeToTimeBTableViewCell.swift in Sources */,
-				418BEA852094F81A00600E57 /* DT.swift in Sources */,
 				15A5A2E420895B8300AE32AA /* ViewController.swift in Sources */,
 				418BEA842094F81A00600E57 /* Match.swift in Sources */,
 				15A5A2E220895B8300AE32AA /* AppDelegate.swift in Sources */,
 				4151E18E209BE64F00DAFB73 /* MainData.swift in Sources */,
+				41E5D5AA209E42CC00BE3FC0 /* DT.swift in Sources */,
 				418BEA882094F81A00600E57 /* Stadium.swift in Sources */,
 				418BEA7A2094D7BF00600E57 /* TimeToTimeATableViewCell.swift in Sources */,
 				418BEA8C20951F5B00600E57 /* PlayersTableViewCell.swift in Sources */,
 				15A5A2F820896B9D00AE32AA /* MainCellTableViewCell.swift in Sources */,
 				418BEA862094F81A00600E57 /* Country.swift in Sources */,
 				418BEA7E2094F5A400600E57 /* TeamViewController.swift in Sources */,
-				418BEA8E20951F6900600E57 /* DTTableViewCell.swift in Sources */,
+				41E5D5AC209E42F800BE3FC0 /* DTTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

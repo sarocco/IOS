@@ -20,16 +20,17 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var countryAButton: UIButton!
     @IBOutlet weak var countryBButton: UIButton!
     
-    @IBAction func countryBButton(_ sender: UIButton!) {
-        performSegue(withIdentifier: "segueToTeamViewController", sender: self)
-    }
-    
-    @IBAction func countryAButton(_ sender: UIButton!) {
-        performSegue(withIdentifier: "segueToTeamViewController", sender: self)
-    }
-    
+    var countrySelected = true
     var match : Match?
     
+    @IBAction func countryAButton(_ sender: UIButton!) {
+        countrySelected = true
+        performSegue(withIdentifier: "segueToTeamViewController", sender: self)
+    }
+    @IBAction func countryBButton(_ sender: UIButton!) {
+        countrySelected = false
+        performSegue(withIdentifier: "segueToTeamViewController", sender: self)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,6 +82,19 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueToTeamViewController" {
+            let vController = segue.destination as! TeamViewController
+            //Send the country to the TeamViewController
+                if countrySelected {
+                    vController.country = match?.countryA
+                }
+                else {
+                    vController.country = match?.countryB
+                }
+        }
     }
     
 

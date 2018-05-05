@@ -10,6 +10,10 @@ import UIKit
 
 class PlayersTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var numberLabel: UILabel!
+    @IBOutlet weak var playerLabel: UILabel!
+    @IBOutlet weak var nameTeamLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

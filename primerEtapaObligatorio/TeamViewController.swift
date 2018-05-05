@@ -13,32 +13,50 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var countryLabel: UILabel!
     @IBOutlet weak var shield: UIImageView!
     @IBOutlet weak var playersTableView: UITableView!
-    
-    let countries = ["Egipto", "Rusia", "Arabia Saudita","Uruguay"]
+    @IBOutlet weak var playersLabel: UILabel!
+    @IBOutlet weak var nextMatchesLabel: UILabel!
+    @IBOutlet weak var collectionNextMatches: UICollectionView!    
 
+    var country: Country?
+    var players: [Player] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         playersTableView.delegate = self
         playersTableView.dataSource = self
+        //check if exist a country
+        if let country = country {
+            //load de conuntry shield to imageContainer
+            shield.image = UIImage(named: country.shield)
+            countryLabel.text = country.name
+            players = country.players
+        }
         playersTableView.reloadData()
     }
     
     //return the number of rows in a given section of a table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 8
+        let sizePlayers = country!.players.count
+        return sizePlayers + 1
     }
+   
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cellTable: UITableViewCell?
-        if (indexPath.row % 2 == 0)
-        {
-            cellTable = tableView.dequeueReusableCell(withIdentifier: "playerId")
+        let sizePlayers = country!.players.count
+        if (indexPath.row <= sizePlayers){
+            let cell = tableView.dequeueReusableCell(withIdentifier: "playerId", for: indexPath) as? PlayersTableViewCell
+            let player = players[indexPath.row]
+            cell?.numberLabel.text = player.number
+            cell?.playerLabel.text = player.name
+            cell?.nameTeamLabel.text = player.nameTeam
+            return cell!
+        }else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "dtId", for: indexPath) as? DTTableViewCell
+            cell?.nameDTLabel.text = country?.dt.name
+            cell?.idDTLabel.text = country?.dt.identifier
+            return cell!
         }
-        else {
-            cellTable = tableView.dequeueReusableCell(withIdentifier: "dtId")
-        }
-        
-        return cellTable!
+       return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

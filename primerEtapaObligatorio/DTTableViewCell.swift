@@ -2,7 +2,7 @@
 //  DTTableViewCell.swift
 //  primerEtapaObligatorio
 //
-//  Created by Carolina Rocco on 28/4/18.
+//  Created by Carolina Rocco on 5/5/18.
 //  Copyright © 2018 UCUDAL. All rights reserved.
 //
 
@@ -10,6 +10,11 @@ import UIKit
 
 class DTTableViewCell: UITableViewCell {
 
+    
+    @IBOutlet weak var nameDTLabel: UILabel!
+    @IBOutlet weak var idDTLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
