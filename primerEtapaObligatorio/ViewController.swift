@@ -99,6 +99,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.navigationController?.pushViewController(vController!, animated: true)
         vController?.nameCountryA = match.countryA.name
         vController?.nameCountryB = match.countryB.name
+        vController?.stadiumName = match.stadium.stadiumImage
         
 
         
