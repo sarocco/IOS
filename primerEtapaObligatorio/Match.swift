@@ -6,8 +6,8 @@ class Match {
     var group: String
     var countryA: Country
     var countryB: Country
-    var resultCountryA: Int?
-    var resultCountryB : Int?
+    var resultCountryA: String?
+    var resultCountryB : String?
     
     //Match without results
     init (date: String, group:String,stadium: Stadium, countryA:Country, countryB: Country) {
@@ -19,7 +19,7 @@ class Match {
     }
     
     //Match with results
-    init (date: String, group:String,stadium: Stadium, countryA:Country, countryB: Country, resultCountryA: Int, resultCountryB: Int) {
+    init (date: String, group:String,stadium: Stadium, countryA:Country, countryB: Country, resultCountryA: String, resultCountryB: String) {
         self.date = date
         self.stadium = stadium
         self.group = group

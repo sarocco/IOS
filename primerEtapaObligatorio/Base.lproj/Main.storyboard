@@ -60,8 +60,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ok-r6-Uwm">
-                                                    <rect key="frame" x="178" y="166.5" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ok-r6-Uwm">
+                                                    <rect key="frame" x="220" y="187.5" width="0.0" height="0.0"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -79,8 +79,8 @@
                                                         <constraint firstAttribute="width" constant="80" id="pr7-GS-4ot"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfw-XK-T8N">
-                                                    <rect key="frame" x="178" y="89" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfw-XK-T8N">
+                                                    <rect key="frame" x="178" y="110" width="0.0" height="0.0"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -151,7 +151,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="samaraArena" translatesAutoresizingMaskIntoConstraints="NO" id="aqN-Fh-Dme">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Samara Arena" translatesAutoresizingMaskIntoConstraints="NO" id="aqN-Fh-Dme">
                                 <rect key="frame" x="0.0" y="94" width="375" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="Kad-4X-1JZ"/>
@@ -341,7 +341,7 @@ Unicode: U+1F6D1, UTF-8: F0 9F 9B 91</string>
                     <connections>
                         <outlet property="countryAButton" destination="BfX-bJ-d62" id="u10-YS-VsD"/>
                         <outlet property="countryALabel" destination="Ujk-U8-MPN" id="l4B-KW-jBa"/>
-                        <outlet property="countryBImage" destination="DYf-0q-HqE" id="fMn-9O-noo"/>
+                        <outlet property="countryBButton" destination="DYf-0q-HqE" id="zk4-9x-eFv"/>
                         <outlet property="countryBLabel" destination="s9J-94-YUe" id="fXk-TG-gjM"/>
                         <outlet property="countryVsCountryLabel" destination="7KU-rX-hgz" id="Ev2-sc-ZuN"/>
                         <outlet property="dateTimeLabel" destination="baa-FM-ZQu" id="AF2-on-pgF"/>
@@ -535,8 +535,8 @@ Unicode: U+1F6D1, UTF-8: F0 9F 9B 91</string>
         </scene>
     </scenes>
     <resources>
-        <image name="Rusia" width="354" height="354"/>
-        <image name="Uruguay" width="600" height="600"/>
-        <image name="samaraArena" width="326" height="183"/>
+        <image name="Rusia" width="177" height="177"/>
+        <image name="Samara Arena" width="326" height="183"/>
+        <image name="Uruguay" width="300" height="300"/>
     </resources>
 </document>

@@ -18,7 +18,7 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var dateTimeLabel: UILabel!
     @IBOutlet weak var timeToTimeTableView: UITableView!
     @IBOutlet weak var countryAButton: UIButton!
-    @IBOutlet weak var countryBImage: UIButton!
+    @IBOutlet weak var countryBButton: UIButton!
     
     @IBAction func countryBButton(_ sender: UIButton!) {
         performSegue(withIdentifier: "segueToTeamViewController", sender: self)
@@ -28,14 +28,24 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
         performSegue(withIdentifier: "segueToTeamViewController", sender: self)
     }
     
+    var imageCountryA = UIImage()
+    var nameCountryA = ""
+    var imageCountryB = UIImage()
+    var nameCountryB = ""
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         timeToTimeTableView.delegate = self
         timeToTimeTableView.dataSource = self
         timeToTimeTableView.reloadData()
+        countryALabel.text = nameCountryA
+        countryBLabel.text = nameCountryB
+        
         
     }
+    
+    
     
     //return the number of rows in a given section of a table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
