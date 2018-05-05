@@ -28,19 +28,29 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
         performSegue(withIdentifier: "segueToTeamViewController", sender: self)
     }
     
-    var imageCountryA = UIImage()
-    var nameCountryA = ""
-    var imageCountryB = UIImage()
-    var nameCountryB = ""
+    var match : Match?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         timeToTimeTableView.delegate = self
         timeToTimeTableView.dataSource = self
         timeToTimeTableView.reloadData()
-        countryALabel.text = nameCountryA
-        countryBLabel.text = nameCountryB
+        
+        // if let match y cargar datos desde ese objeto
+        if let match = match {
+            countryALabel.text = match.countryA.name
+            countryBLabel.text = match.countryB.name
+            stadiumImage.image = UIImage(named: match.stadium.stadiumImage)
+            stadiumName.text = match.stadium.name
+            dateTimeLabel.text = match.date
+            let imagenA = UIImage (named: match.countryA.shield)
+            let imagenB = UIImage (named: match.countryB.shield)
+            countryAButton.setImage(imagenA,for: UIControlState.normal)
+            countryBButton.setImage(imagenB,for: UIControlState.normal)
+
+        }
         
         
     }

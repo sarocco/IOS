@@ -41,7 +41,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.dataSource = self
         tableView.reloadData()
         
-        
     }
     
     func compareDate(date:String) -> Bool {
@@ -94,16 +93,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let match = matches[indexPath.row]//ver si podemos arreglar esto
-        let vController = storyboard?.instantiateViewController(withIdentifier: "IdentifierViewController") as? MatchViewController
+        let match = matches[indexPath.row]
+        let vController = storyboard?.instantiateViewController(withIdentifier: "IdentifierMatchViewController") as? MatchViewController
         self.navigationController?.pushViewController(vController!, animated: true)
-        vController?.nameCountryA = match.countryA.name
-        vController?.nameCountryB = match.countryB.name
-        //vController?.stadiumName = match.stadium.stadiumImage
-        
-
-        
-        
+        vController?.match = match
     }
     
     override func didReceiveMemoryWarning() {

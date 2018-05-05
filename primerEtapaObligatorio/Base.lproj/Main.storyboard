@@ -136,7 +136,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="UHL-XS-tVK" id="BL2-dC-UQc"/>
-                        <segue destination="KLy-XS-SSR" kind="show" id="avI-KX-4X0"/>
+                        <segue destination="KLy-XS-SSR" kind="show" identifier="segueToMatchViewController" id="avI-KX-4X0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -146,7 +146,7 @@
         <!--Match View Controller-->
         <scene sceneID="dbT-Za-PEz">
             <objects>
-                <viewController storyboardIdentifier="IdentifierViewController" id="KLy-XS-SSR" customClass="MatchViewController" customModule="primerEtapaObligatorio" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IdentifierMatchViewController" id="KLy-XS-SSR" customClass="MatchViewController" customModule="primerEtapaObligatorio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zyD-CD-JXI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
