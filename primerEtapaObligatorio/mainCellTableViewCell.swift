@@ -16,7 +16,8 @@ class MainCellTableViewCell: UITableViewCell {
     @IBOutlet weak var labelGroup: UILabel!
     @IBOutlet weak var labelCountryOne: UILabel!
     @IBOutlet weak var labelCountryTwo: UILabel!
-    
+    @IBOutlet weak var labelResultA: UILabel!
+    @IBOutlet weak var labelResultB: UILabel!
     //Outlets pictures
     
     @IBOutlet weak var pictureCountryOne: UIImageView!

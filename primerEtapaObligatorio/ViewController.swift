@@ -20,16 +20,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var firstMatch = Match(date: "2018.05.30",
+        let firstMatch = Match(date: "2018.05.30",
                                group: "A",
                                stadium: Stadium(name:"samaraArena", stadiumImage: "samaraArena"),
-                               countryA: Country(name: "uruguay", player: [], dt: DT(name: "Tabarez",identifier: "DT"), shield:"uruguay"),
-                               countryB: Country(name: "rusia", player: [], dt: DT(name: "jsahjgfshdg",identifier: "DT"), shield: "rusia"))
-        var secondMatch = Match(date: "2018.05.30",
+                               countryA: Country(name: "Uruguay", player: [], dt: DT(name: "Tabarez",identifier: "DT"), shield:"Uruguay"),
+                               countryB: Country(name: "Rusia", player: [], dt: DT(name: "jsahjgfshdg",identifier: "DT"), shield: "Rusia"))
+        let secondMatch = Match(date: "2018.05.30",
                                group: "A",
                                stadium: Stadium(name:"samaraArena", stadiumImage: "samaraArena"),
-                               countryA: Country(name: "uruguay", player: [], dt: DT(name: "Tabarez",identifier: "DT"), shield:"uruguay"),
-                               countryB: Country(name: "rusia", player: [], dt: DT(name: "jsahjgfshdg",identifier: "DT"), shield: "rusia"),resultCountryA: 2,resultCountryB: 0)
+                               countryA: Country(name: "Uruguay", player: [], dt: DT(name: "Tabarez",identifier: "DT"), shield:"Uruguay"),
+                               countryB: Country(name: "Rusia", player: [], dt: DT(name: "jsahjgfshdg",identifier: "DT"), shield: "Rusia"),resultCountryA: 2,resultCountryB: 0)
         matches = [firstMatch, secondMatch]
         
         tableView.delegate = self
@@ -39,9 +39,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellMatch", for:indexPath) as? MainCellTableViewCell
+        var cell = tableView.dequeueReusableCell(withIdentifier: "cellMatch", for:indexPath) as? MainCellTableViewCell
     
-        let match = matches[indexPath.row]
+        var match = matches[indexPath.row]
         //Get the name of the Country of the Matches array
         cell?.labelCountryOne.text = match.countryA.name
         //Search for the image in the Assets folder with that name
