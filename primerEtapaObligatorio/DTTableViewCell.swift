@@ -10,7 +10,6 @@ import UIKit
 
 class DTTableViewCell: UITableViewCell {
 
-    
     @IBOutlet weak var nameDTLabel: UILabel!
     @IBOutlet weak var idDTLabel: UILabel!
     

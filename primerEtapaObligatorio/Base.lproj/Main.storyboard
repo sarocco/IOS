@@ -372,7 +372,7 @@ Unicode: U+1F6D1, UTF-8: F0 9F 9B 91</string>
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qZh-JJ-DT4">
-                                <rect key="frame" x="0.0" y="274" width="375" height="243"/>
+                                <rect key="frame" x="0.0" y="274" width="375" height="193"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="playerId" id="hal-fa-nSL" customClass="PlayersTableViewCell" customModule="primerEtapaObligatorio" customModuleProvider="target">
@@ -416,39 +416,6 @@ Unicode: U+1F6D1, UTF-8: F0 9F 9B 91</string>
                                             <outlet property="playerLabel" destination="a5x-PL-YOG" id="x4L-Te-RD8"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="dtId" id="Pi1-b8-40D" customClass="DTTableViewCell" customModule="primerEtapaObligatorio" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="72" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Pi1-b8-40D" id="O5G-sg-jZv">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Khe-PD-U0j">
-                                                    <rect key="frame" x="15" y="11.5" width="22" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oscar Washington Tabárez" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcV-y4-ayE">
-                                                    <rect key="frame" x="52" y="14" width="173.5" height="17"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="PcV-y4-ayE" firstAttribute="leading" secondItem="Khe-PD-U0j" secondAttribute="trailing" constant="15" id="JWb-L6-Pjd"/>
-                                                <constraint firstItem="Khe-PD-U0j" firstAttribute="centerY" secondItem="O5G-sg-jZv" secondAttribute="centerY" id="Qae-KZ-PcC"/>
-                                                <constraint firstItem="PcV-y4-ayE" firstAttribute="centerY" secondItem="O5G-sg-jZv" secondAttribute="centerY" id="ooa-Ke-gYm"/>
-                                                <constraint firstItem="Khe-PD-U0j" firstAttribute="leading" secondItem="O5G-sg-jZv" secondAttribute="leading" constant="15" id="sYi-jR-6KE"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="idDTLabel" destination="Khe-PD-U0j" id="t6v-yE-mmx"/>
-                                            <outlet property="nameDTLabel" destination="PcV-y4-ayE" id="hUW-ep-doQ"/>
-                                            <outlet property="nameDtLabel" destination="PcV-y4-ayE" id="idw-J6-6uR"/>
-                                        </connections>
-                                    </tableViewCell>
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uruguay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjT-RA-Ldm">
@@ -457,35 +424,92 @@ Unicode: U+1F6D1, UTF-8: F0 9F 9B 91</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SIM-t9-ct1">
-                                <rect key="frame" x="0.0" y="567" width="375" height="100"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SIM-t9-ct1">
+                                <rect key="frame" x="0.0" y="567" width="300" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="04Q-91-4Bf">
-                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="itemSize" width="200" height="90"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="y8h-0B-IZV">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="matchCollectionCell" id="y8h-0B-IZV" customClass="NextMatchesCollectionViewCell" customModule="primerEtapaObligatorio" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="0.0" width="200" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rusia" translatesAutoresizingMaskIntoConstraints="NO" id="pvp-Uq-Dwx">
+                                                    <rect key="frame" x="5" y="5" width="80" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="LZz-kS-RiS"/>
+                                                        <constraint firstAttribute="height" constant="80" id="WID-qa-GB3"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7NR-SW-6fU">
+                                                    <rect key="frame" x="119" y="37" width="28.5" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stadium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPm-Nz-mOC">
+                                                    <rect key="frame" x="108.5" y="58" width="50" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGW-De-AX8">
+                                                    <rect key="frame" x="105" y="10" width="56" height="17"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </view>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="pvp-Uq-Dwx" firstAttribute="leading" secondItem="y8h-0B-IZV" secondAttribute="leading" constant="5" id="TWi-w9-GB4"/>
+                                            <constraint firstItem="pvp-Uq-Dwx" firstAttribute="top" secondItem="y8h-0B-IZV" secondAttribute="top" constant="5" id="UVB-6c-rd2"/>
+                                            <constraint firstItem="7NR-SW-6fU" firstAttribute="top" secondItem="RGW-De-AX8" secondAttribute="bottom" constant="10" id="aCn-Nr-47Z"/>
+                                            <constraint firstItem="aPm-Nz-mOC" firstAttribute="top" secondItem="7NR-SW-6fU" secondAttribute="bottom" constant="5" id="ctL-5D-Gzs"/>
+                                            <constraint firstItem="7NR-SW-6fU" firstAttribute="centerX" secondItem="RGW-De-AX8" secondAttribute="centerX" id="kBx-Io-EsD"/>
+                                            <constraint firstItem="aPm-Nz-mOC" firstAttribute="centerX" secondItem="7NR-SW-6fU" secondAttribute="centerX" id="thW-yt-8ju"/>
+                                            <constraint firstItem="RGW-De-AX8" firstAttribute="leading" secondItem="pvp-Uq-Dwx" secondAttribute="trailing" constant="20" id="yVe-lc-f08"/>
+                                            <constraint firstItem="RGW-De-AX8" firstAttribute="top" secondItem="y8h-0B-IZV" secondAttribute="top" constant="10" id="z4r-5A-UOo"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="countryImage" destination="pvp-Uq-Dwx" id="aGc-FY-0rt"/>
+                                            <outlet property="countryName" destination="RGW-De-AX8" id="LkG-rz-aJh"/>
+                                            <outlet property="matchDate" destination="7NR-SW-6fU" id="gKE-V9-S5U"/>
+                                            <outlet property="selectedBackgroundView" destination="SIM-t9-ct1" id="KNu-QO-Sal"/>
+                                            <outlet property="stadiumName" destination="aPm-Nz-mOC" id="t2c-C8-ZEz"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Players" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9h-l3-6Yw">
-                                <rect key="frame" x="20" y="247.5" width="64" height="21.5"/>
+                                <rect key="frame" x="15" y="247.5" width="64" height="21.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Próximos Partidos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPO-gr-W1C">
-                                <rect key="frame" x="25" y="540.5" width="158" height="22"/>
+                                <rect key="frame" x="25" y="540" width="158" height="22"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5aC-PD-hW0">
+                                <rect key="frame" x="15" y="472" width="24.5" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DT name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVe-sH-r5n">
+                                <rect key="frame" x="54.5" y="472" width="69" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -497,23 +521,29 @@ Unicode: U+1F6D1, UTF-8: F0 9F 9B 91</string>
                             <constraint firstItem="SIM-t9-ct1" firstAttribute="top" secondItem="LPO-gr-W1C" secondAttribute="bottom" constant="5" id="8gN-K0-6gd"/>
                             <constraint firstItem="D4z-FK-atm" firstAttribute="trailing" secondItem="qZh-JJ-DT4" secondAttribute="trailing" id="CX5-B5-QUG"/>
                             <constraint firstItem="f2Z-cg-OCq" firstAttribute="centerX" secondItem="D4z-FK-atm" secondAttribute="centerX" id="Cch-Ud-264"/>
+                            <constraint firstItem="GVe-sH-r5n" firstAttribute="bottom" secondItem="5aC-PD-hW0" secondAttribute="bottom" id="DYO-X1-xhT"/>
                             <constraint firstItem="D4z-FK-atm" firstAttribute="trailing" secondItem="SIM-t9-ct1" secondAttribute="trailing" id="P0S-vl-ma6"/>
                             <constraint firstItem="LPO-gr-W1C" firstAttribute="leading" secondItem="D4z-FK-atm" secondAttribute="leading" constant="25" id="P72-S2-5wO"/>
                             <constraint firstItem="gjT-RA-Ldm" firstAttribute="top" secondItem="D4z-FK-atm" secondAttribute="top" id="Pkg-hE-0FR"/>
-                            <constraint firstItem="D9h-l3-6Yw" firstAttribute="leading" secondItem="D4z-FK-atm" secondAttribute="leading" constant="20" id="Tot-bV-xqB"/>
+                            <constraint firstItem="D9h-l3-6Yw" firstAttribute="leading" secondItem="D4z-FK-atm" secondAttribute="leading" constant="15" id="Tot-bV-xqB"/>
+                            <constraint firstItem="5aC-PD-hW0" firstAttribute="leading" secondItem="D4z-FK-atm" secondAttribute="leading" constant="15" id="U7e-TB-OSj"/>
                             <constraint firstItem="qZh-JJ-DT4" firstAttribute="top" secondItem="D9h-l3-6Yw" secondAttribute="bottom" constant="5" id="Veu-bS-hOi"/>
                             <constraint firstItem="qZh-JJ-DT4" firstAttribute="leading" secondItem="D4z-FK-atm" secondAttribute="leading" id="aAO-2t-pqk"/>
-                            <constraint firstItem="SIM-t9-ct1" firstAttribute="top" secondItem="qZh-JJ-DT4" secondAttribute="bottom" constant="50" id="bzd-h1-RsR"/>
+                            <constraint firstItem="SIM-t9-ct1" firstAttribute="top" secondItem="qZh-JJ-DT4" secondAttribute="bottom" constant="100" id="bzd-h1-RsR"/>
                             <constraint firstItem="f2Z-cg-OCq" firstAttribute="top" secondItem="D4z-FK-atm" secondAttribute="top" constant="25" id="jNf-l0-bbX"/>
                             <constraint firstItem="SIM-t9-ct1" firstAttribute="leading" secondItem="D4z-FK-atm" secondAttribute="leading" id="jgu-Ir-q9N"/>
+                            <constraint firstItem="5aC-PD-hW0" firstAttribute="top" secondItem="qZh-JJ-DT4" secondAttribute="bottom" constant="5" id="k48-fh-UBm"/>
+                            <constraint firstItem="GVe-sH-r5n" firstAttribute="leading" secondItem="5aC-PD-hW0" secondAttribute="trailing" constant="15" id="mQC-lx-kfN"/>
                             <constraint firstItem="D4z-FK-atm" firstAttribute="bottom" secondItem="SIM-t9-ct1" secondAttribute="bottom" id="q55-7f-jVA"/>
-                            <constraint firstItem="D4z-FK-atm" firstAttribute="bottom" secondItem="qZh-JJ-DT4" secondAttribute="bottom" constant="150" id="uJM-Zo-JOc"/>
+                            <constraint firstItem="D4z-FK-atm" firstAttribute="bottom" secondItem="qZh-JJ-DT4" secondAttribute="bottom" constant="200" id="uJM-Zo-JOc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="D4z-FK-atm"/>
                     </view>
                     <connections>
                         <outlet property="collectionNextMatches" destination="SIM-t9-ct1" id="BXw-xW-55i"/>
                         <outlet property="countryLabel" destination="gjT-RA-Ldm" id="a6C-2g-grW"/>
+                        <outlet property="dtLabel" destination="5aC-PD-hW0" id="Yqk-QL-tcO"/>
+                        <outlet property="dtNameLabel" destination="GVe-sH-r5n" id="s0K-uX-u2z"/>
                         <outlet property="nextMatchesLabel" destination="LPO-gr-W1C" id="aBl-Py-FUy"/>
                         <outlet property="playersLabel" destination="D9h-l3-6Yw" id="fqK-Nw-bxR"/>
                         <outlet property="playersTableView" destination="qZh-JJ-DT4" id="8Bl-EJ-saz"/>

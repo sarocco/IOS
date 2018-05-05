@@ -25,6 +25,7 @@
 		418BEA8C20951F5B00600E57 /* PlayersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BEA8B20951F5B00600E57 /* PlayersTableViewCell.swift */; };
 		41E5D5AA209E42CC00BE3FC0 /* DT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E5D5A9209E42CC00BE3FC0 /* DT.swift */; };
 		41E5D5AC209E42F800BE3FC0 /* DTTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E5D5AB209E42F800BE3FC0 /* DTTableViewCell.swift */; };
+		41E5D5AE209E743F00BE3FC0 /* NextMatchesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E5D5AD209E743F00BE3FC0 /* NextMatchesCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		418BEA8B20951F5B00600E57 /* PlayersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersTableViewCell.swift; sourceTree = "<group>"; };
 		41E5D5A9209E42CC00BE3FC0 /* DT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DT.swift; path = ../../../../Downloads/classSwift/DT.swift; sourceTree = "<group>"; };
 		41E5D5AB209E42F800BE3FC0 /* DTTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTTableViewCell.swift; sourceTree = "<group>"; };
+		41E5D5AD209E743F00BE3FC0 /* NextMatchesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextMatchesCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				4151E18D209BE64F00DAFB73 /* MainData.swift */,
 				15A5A2F720896B9D00AE32AA /* MainCellTableViewCell.swift */,
 				15A5A2E520895B8300AE32AA /* Main.storyboard */,
+				41E5D5AD209E743F00BE3FC0 /* NextMatchesCollectionViewCell.swift */,
 				15A5A2E820895B8300AE32AA /* Assets.xcassets */,
 				15A5A2EA20895B8300AE32AA /* LaunchScreen.storyboard */,
 				15A5A2ED20895B8300AE32AA /* Info.plist */,
@@ -176,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				418BEA872094F81A00600E57 /* Player.swift in Sources */,
+				41E5D5AE209E743F00BE3FC0 /* NextMatchesCollectionViewCell.swift in Sources */,
 				418BEA782094D1EF00600E57 /* MatchViewController.swift in Sources */,
 				418BEA7C2094ED6D00600E57 /* TimeToTimeBTableViewCell.swift in Sources */,
 				15A5A2E420895B8300AE32AA /* ViewController.swift in Sources */,
