@@ -27,9 +27,8 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         playersTableView.delegate = self
         playersTableView.dataSource = self
-        //<---OJO da ERROR--->
-        //collectionNextMatches.delegate = self
-        //collectionNextMatches.dataSource = self
+        collectionNextMatches.delegate = self
+        collectionNextMatches.dataSource = self
         
         //check if exist a country
         if let country = country {
@@ -67,13 +66,13 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
         return 5
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "matchCollectionCell", for: indexPath) as! NextMatchesCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "idNextMatch", for: indexPath) as! NextMatchesCollectionViewCell
         return cell
     }
-    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+   /* func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         let nextMAtchcell = cell as! NextMatchesCollectionViewCell
         nextMAtchcell.countryName.text = country?.name
-    }
+    }*/
     
     /*func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 4
