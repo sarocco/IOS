@@ -26,6 +26,7 @@
 		41E5D5AA209E42CC00BE3FC0 /* DT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E5D5A9209E42CC00BE3FC0 /* DT.swift */; };
 		41E5D5AC209E42F800BE3FC0 /* DTTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E5D5AB209E42F800BE3FC0 /* DTTableViewCell.swift */; };
 		41E5D5AE209E743F00BE3FC0 /* NextMatchesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E5D5AD209E743F00BE3FC0 /* NextMatchesCollectionViewCell.swift */; };
+		41FE13D1209FA78D0013C97F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE13D0209FA78D0013C97F /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		41E5D5A9209E42CC00BE3FC0 /* DT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DT.swift; path = ../../../../Downloads/classSwift/DT.swift; sourceTree = "<group>"; };
 		41E5D5AB209E42F800BE3FC0 /* DTTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTTableViewCell.swift; sourceTree = "<group>"; };
 		41E5D5AD209E743F00BE3FC0 /* NextMatchesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextMatchesCollectionViewCell.swift; sourceTree = "<group>"; };
+		41FE13D0209FA78D0013C97F /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				418BEA822094F81A00600E57 /* Player.swift */,
 				418BEA832094F81A00600E57 /* Stadium.swift */,
 				418BEA7F2094F81900600E57 /* Match.swift */,
+				41FE13D0209FA78D0013C97F /* Event.swift */,
 			);
 			path = primerEtapaObligatorio;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				418BEA842094F81A00600E57 /* Match.swift in Sources */,
 				15A5A2E220895B8300AE32AA /* AppDelegate.swift in Sources */,
 				4151E18E209BE64F00DAFB73 /* MainData.swift in Sources */,
+				41FE13D1209FA78D0013C97F /* Event.swift in Sources */,
 				41E5D5AA209E42CC00BE3FC0 /* DT.swift in Sources */,
 				418BEA882094F81A00600E57 /* Stadium.swift in Sources */,
 				418BEA7A2094D7BF00600E57 /* TimeToTimeATableViewCell.swift in Sources */,

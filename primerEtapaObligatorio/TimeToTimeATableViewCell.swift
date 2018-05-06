@@ -10,7 +10,7 @@ import UIKit
 
 class TimeToTimeATableViewCell: UITableViewCell {
     
-    @IBOutlet weak var iconLabel: NSLayoutConstraint!
+    @IBOutlet weak var iconALabel: UILabel!
     @IBOutlet weak var playerNameLabel: UILabel!
     @IBOutlet weak var minuteLabel: UILabel!
     

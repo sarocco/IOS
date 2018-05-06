@@ -215,7 +215,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="iconLabel" destination="RoD-2w-ORE" id="0Qc-86-5Da"/>
+                                            <outlet property="iconALabel" destination="fvR-8S-Ios" id="4wV-pz-vqC"/>
                                             <outlet property="minuteLabel" destination="Tu3-Sv-LPM" id="bkJ-lo-8WH"/>
                                             <outlet property="playerNameLabel" destination="7Vy-wt-OaQ" id="TAd-cM-tio"/>
                                         </connections>
@@ -516,6 +516,12 @@ Unicode: U+1F6D1, UTF-8: F0 9F 9B 91</string>
                                             <constraint firstItem="lQb-wq-KcL" firstAttribute="top" secondItem="Xsp-YE-JRs" secondAttribute="bottom" constant="1" id="ZIa-Lv-EyM"/>
                                             <constraint firstItem="Xsp-YE-JRs" firstAttribute="top" secondItem="W8c-mj-DEV" secondAttribute="bottom" constant="10" id="Zp1-TC-97p"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="countryImage" destination="LTT-XH-W6T" id="tnG-Bj-h2S"/>
+                                            <outlet property="countryName" destination="W8c-mj-DEV" id="ApI-sq-2qA"/>
+                                            <outlet property="matchDate" destination="Xsp-YE-JRs" id="kaH-lL-eJv"/>
+                                            <outlet property="stadiumName" destination="lQb-wq-KcL" id="7Kc-IQ-aFz"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>

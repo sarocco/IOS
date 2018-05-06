@@ -26,7 +26,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                                stadium: Stadium(name:"Samara Arena", stadiumImage: "Samara Arena"),
                                countryA: Country(name: "Uruguay", players: [Player(name: "Fernando Muslera",nameTeam: "Galatasaray",number: "1"), Player(name: "Diego Godín",nameTeam: "Atlético de Madrid",number: "3"),Player(name: "Luis Suarez",nameTeam: "Barcelona",number: "9")], dt: DT(name: "Oscar Tabarez",identifier: "DT"), shield:"Uruguay", abbreviation: "URU"),
                                countryB: Country(name: "Rusia", players: [], dt: DT(name: "jsahjgfshdg",identifier: "DT"),
-                                                 shield: "Rusia", abbreviation: "RUS"))
+                                                 shield: "Rusia", abbreviation: "RUS"),
+                               eventA: [Event(icon: "⚽️",player: "Luis Suarez",time: "3'"),Event(icon: "⚽️",player: "Pedo el Malvado",time: "20'")],
+                               eventB: [Event(icon: "🛑",player: "Pedo el Malvado",time: "20'")])
         var secondMatch = Match(date: "05 de Junio 2018 10:04",
                                group: "Grupo A",
                                stadium: Stadium(name:"Estadio Central", stadiumImage: "Estadio Central"),
@@ -99,6 +101,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.navigationController?.pushViewController(vController!, animated: true)
         vController?.match = match
     }
+    /*open func getNextMatches(country: Country) -> [Match]{
+        var nextMatches: [Match] = []
+        for match in matches{
+            if (compareDate(date: match.date)){
+                if (match.countryA.name == country.name){
+                    nextMatches.append(match)
+                }
+            }
+        }
+        return nextMatches
+    }*/
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

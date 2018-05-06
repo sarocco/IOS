@@ -21,7 +21,7 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     var country: Country?
     var players: [Player] = []
-    var matches: [Match] = []
+    var nextMatches: [Match]? = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,11 +39,8 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
             players = country.players
             dtNameLabel.text = country.dt.name
         }
-        /*if let matches = matches{
-            
-            
-        }*/
         playersTableView.reloadData()
+        collectionNextMatches.reloadData()
     }
     
     func compareDate(date:String) -> Bool {
@@ -85,13 +82,29 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
         return 1
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return 5 //nextMatches.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "idNextMatch", for: indexPath) as! NextMatchesCollectionViewCell
         cell.layer.masksToBounds = true
         cell.layer.cornerRadius = 10
-        //let match = matches[indexPath.row]
+        /*let match = nextMatches![indexPath.row]
+        cell.countryImage.image = UIImage(named: match.countryA.shield)
+        cell.countryName.text = match.countryA.name
+        cell.matchDate.text = match.date
+        cell.stadiumName.text = match.stadium.name*/
         return cell
     }
+    /*func getNextMatches() -> [Match]{
+     var nextMatches: [Match] = []
+        for match in matches{
+            if (compareDate(date: match.date)){
+                if (countryLabel.text == match.countryA.name || countryLabel.text == match.countryB.name){
+                    nextMatches.append(match)
+                }
+            }
+        }
+        return nextMatches
+    }*/
+    
 }

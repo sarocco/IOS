@@ -22,6 +22,8 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     var countrySelected = true
     var match : Match?
+    var eventsCountryA: [Event]?
+    var eventsCountryB: [Event]?
     
     @IBAction func countryAButton(_ sender: UIButton!) {
         countrySelected = true
@@ -37,7 +39,7 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         timeToTimeTableView.delegate = self
         timeToTimeTableView.dataSource = self
-        timeToTimeTableView.reloadData()
+        
         
         // if let match y cargar datos desde ese objeto
         if let match = match {
@@ -50,8 +52,10 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
             let imagenB = UIImage (named: match.countryB.shield)
             countryAButton.setImage(imagenA,for: UIControlState.normal)
             countryBButton.setImage(imagenB,for: UIControlState.normal)
-
+            eventsCountryA = match.eventA
+            eventsCountryB = match.eventB
         }
+        timeToTimeTableView.reloadData()
         
         
     }
@@ -64,15 +68,13 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cellTable: UITableViewCell?
-        if (indexPath.row % 2 == 0)
-        {
-            cellTable = tableView.dequeueReusableCell(withIdentifier: "timeToTimeCountryACell")
-        }
-        else {
-            cellTable = tableView.dequeueReusableCell(withIdentifier: "timeToTimeCountryBCell")
-        }
         
-        return cellTable!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "timeToTimeCountryACell", for: indexPath) as? TimeToTimeATableViewCell
+        let event = eventsCountryA![indexPath.row]
+        cell?.iconALabel.text = event.icon
+        cell?.playerNameLabel.text = event.player
+        cell?.minuteLabel.text = event.time
+        return cell!
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
