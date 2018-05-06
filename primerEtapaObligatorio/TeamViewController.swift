@@ -29,6 +29,7 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
         playersTableView.dataSource = self
         collectionNextMatches.delegate = self
         collectionNextMatches.dataSource = self
+        self.collectionNextMatches.isPagingEnabled = false
         
         //check if exist a country
         if let country = country {
@@ -38,9 +39,30 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
             players = country.players
             dtNameLabel.text = country.dt.name
         }
+        /*if let matches = matches{
+            
+            
+        }*/
         playersTableView.reloadData()
     }
     
+    func compareDate(date:String) -> Bool {
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "es_ES")
+        dateFormatter.dateFormat = "dd 'de' MMMM yyyy HH:mm"
+        
+        // Create a date object from the string
+        if let date = dateFormatter.date(from: date) {
+            
+            if date < Date() {
+                return true
+            } else {
+                return false
+            }
+        }
+        return false
+    }
+
     //return the number of rows in a given section of a table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return country!.players.count
@@ -67,32 +89,9 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "idNextMatch", for: indexPath) as! NextMatchesCollectionViewCell
+        cell.layer.masksToBounds = true
+        cell.layer.cornerRadius = 10
+        //let match = matches[indexPath.row]
         return cell
     }
-   /* func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        let nextMAtchcell = cell as! NextMatchesCollectionViewCell
-        nextMAtchcell.countryName.text = country?.name
-    }*/
-    
-    /*func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 4
-    }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat
-    {
-        
-        return 1;
-    }*/
-    
 }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-
