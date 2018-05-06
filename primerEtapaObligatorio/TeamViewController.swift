@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TeamViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class TeamViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
     @IBOutlet weak var countryLabel: UILabel!
     @IBOutlet weak var shield: UIImageView!
@@ -21,11 +21,16 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     var country: Country?
     var players: [Player] = []
+    var matches: [Match] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         playersTableView.delegate = self
         playersTableView.dataSource = self
+        //<---OJO da ERROR--->
+        //collectionNextMatches.delegate = self
+        //collectionNextMatches.dataSource = self
+        
         //check if exist a country
         if let country = country {
             //load de conuntry shield to imageContainer
@@ -54,6 +59,30 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
     }
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 5
+    }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "matchCollectionCell", for: indexPath) as! NextMatchesCollectionViewCell
+        return cell
+    }
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        let nextMAtchcell = cell as! NextMatchesCollectionViewCell
+        nextMAtchcell.countryName.text = country?.name
+    }
+    
+    /*func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 4
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat
+    {
+        
+        return 1;
+    }*/
     
 }
 

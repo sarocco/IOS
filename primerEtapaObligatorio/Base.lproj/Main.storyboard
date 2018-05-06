@@ -425,7 +425,7 @@ Unicode: U+1F6D1, UTF-8: F0 9F 9B 91</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SIM-t9-ct1">
-                                <rect key="frame" x="0.0" y="567" width="300" height="100"/>
+                                <rect key="frame" x="0.0" y="567" width="309" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="04Q-91-4Bf">
                                     <size key="itemSize" width="200" height="90"/>
@@ -435,7 +435,7 @@ Unicode: U+1F6D1, UTF-8: F0 9F 9B 91</string>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="matchCollectionCell" id="y8h-0B-IZV" customClass="NextMatchesCollectionViewCell" customModule="primerEtapaObligatorio" customModuleProvider="target">
-                                        <rect key="frame" x="50" y="0.0" width="200" height="90"/>
+                                        <rect key="frame" x="54.5" y="0.0" width="200" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="200" height="90"/>

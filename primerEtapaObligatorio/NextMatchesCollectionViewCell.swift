@@ -14,5 +14,13 @@ class NextMatchesCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var countryName: UILabel!
     @IBOutlet weak var matchDate: UILabel!
     @IBOutlet weak var stadiumName: UILabel!
+    
+    /*func displayContent(countryImage:UIImage,country:String,matchDate:String, stadium:String){
+        //countryImage.image = countryImage
+        countryName.text = country
+        //matchDate.text = matchDate
+        stadiumName.text = stadium
+        
+    }*/
 }
 
