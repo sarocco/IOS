@@ -21,20 +21,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var firstMatch = Match(date: "05 de Junio 2018 10:04",
+        let firstMatch = Match(date: "05 de Junio 2018 10:04",
                                group: "Grupo A",
                                stadium: Stadium(name:"Samara Arena", stadiumImage: "Samara Arena"),
                                countryA: Country(name: "Uruguay", players: [Player(name: "Fernando Muslera",nameTeam: "Galatasaray",number: "1"), Player(name: "Diego Godín",nameTeam: "Atlético de Madrid",number: "3"),Player(name: "Luis Suarez",nameTeam: "Barcelona",number: "9")], dt: DT(name: "Oscar Tabarez",identifier: "DT"), shield:"Uruguay", abbreviation: "URU"),
                                countryB: Country(name: "Rusia", players: [], dt: DT(name: "jsahjgfshdg",identifier: "DT"),
                                                  shield: "Rusia", abbreviation: "RUS"),
-                               eventA: [Event(icon: "⚽️",player: "Luis Suarez",time: "3'"),Event(icon: "⚽️",player: "Pedo el Malvado",time: "20'")],
+                               eventA: [Event(icon: "⚽️",player: "Luis Suarez",time: "3'"),Event(icon: "⚽️",player: "Pedo el Malvado",time: "20'"), Event(icon: "🛑",player: "Pedo el Malvado",time: "20'"), Event(icon: "🔶",player: "Evelyn",time: "28'")],
                                eventB: [Event(icon: "🛑",player: "Pedo el Malvado",time: "20'")])
-        var secondMatch = Match(date: "05 de Junio 2018 10:04",
+        let secondMatch = Match(date: "05 de Junio 2018 10:04",
                                group: "Grupo A",
                                stadium: Stadium(name:"Estadio Central", stadiumImage: "Estadio Central"),
                                countryA: Country(name: "Uruguay", players: [], dt: DT(name: "Oscar Tabarez",identifier: "DT"), shield:"Uruguay", abbreviation: "URU"),
                                countryB: Country(name: "Egipto", players: [], dt: DT(name: "surugn",identifier: "DT"), shield: "Egipto", abbreviation: "EGI"),resultCountryA: "- 2",resultCountryB: "0 -")
-        var thirdMatch = Match(date: "04 de Mayo 2018 10:04",
+        let thirdMatch = Match(date: "04 de Mayo 2018 10:04",
                                 group: "Grupo A",
                                 stadium: Stadium(name:"Volgogrado Arena", stadiumImage: "Volgogrado Arena"),
                                 countryA: Country(name: "Arabia Saudi", players: [], dt: DT(name: "lololo",identifier: "DT"), shield:"Arabia Saudi", abbreviation: "ARA"),
@@ -100,6 +100,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let vController = storyboard?.instantiateViewController(withIdentifier: "IdentifierMatchViewController") as? MatchViewController
         self.navigationController?.pushViewController(vController!, animated: true)
         vController?.match = match
+        vController?.eventsCountryA = match.eventA
+        vController?.eventsCountryB = match.eventB
+        
     }
     /*open func getNextMatches(country: Country) -> [Match]{
         var nextMatches: [Match] = []

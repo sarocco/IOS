@@ -64,17 +64,25 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     //return the number of rows in a given section of a table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return eventsCountryA!.count //+ eventsCountryB!.count
     }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cellTable: UITableViewCell?
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {        
+        let cellA = tableView.dequeueReusableCell(withIdentifier: "timeToTimeCountryACell", for: indexPath) as? TimeToTimeATableViewCell
+        //let cellB = tableView.dequeueReusableCell(withIdentifier: "timeToTimeCountryBCell", for: indexPath) as? TimeToTimeBTableViewCell
+        let eventA = eventsCountryA![indexPath.row]
+        //let eventB = eventsCountryB![indexPath.row]
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "timeToTimeCountryACell", for: indexPath) as? TimeToTimeATableViewCell
-        let event = eventsCountryA![indexPath.row]
-        cell?.iconALabel.text = event.icon
-        cell?.playerNameLabel.text = event.player
-        cell?.minuteLabel.text = event.time
-        return cell!
+        //if (eventsCountryA!.count != 0 ){
+            cellA?.iconALabel.text = eventA.icon
+            cellA?.playerNameLabel.text = eventA.player
+            cellA?.minuteLabel.text = eventA.time
+            return cellA!
+        /*} else {
+            cellB?.iconBLabel.text = eventB.icon
+            cellB?.playerNameLabel.text = eventB.player
+            cellB?.minuteLabel.text = eventB.time
+            return cellB!
+        }*/
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -99,7 +107,6 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
         }
     }
     
-
     /*
     // MARK: - Navigation
 
