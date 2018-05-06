@@ -60,16 +60,19 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
     }
     
-    
-    
     //return the number of rows in a given section of a table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return eventsCountryA!.count //+ eventsCountryB!.count
+        return (eventsCountryA?.count)!
+        //return getAllEvents(eventsCountryA: eventsCountryA!, eventsCountryB: eventsCountryB!).count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {        
         let cellA = tableView.dequeueReusableCell(withIdentifier: "timeToTimeCountryACell", for: indexPath) as? TimeToTimeATableViewCell
         //let cellB = tableView.dequeueReusableCell(withIdentifier: "timeToTimeCountryBCell", for: indexPath) as? TimeToTimeBTableViewCell
+        
+        //Muestra todos los eventos pero de un mismo lado
+        //let eventA = getAllEvents(eventsCountryA: eventsCountryA!, eventsCountryB: eventsCountryB!)[indexPath.row]
         let eventA = eventsCountryA![indexPath.row]
+        
         //let eventB = eventsCountryB![indexPath.row]
         
         //if (eventsCountryA!.count != 0 ){
@@ -94,6 +97,17 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
         // Dispose of any resources that can be recreated.
     }
     
+    func getAllEvents(eventsCountryA: [Event], eventsCountryB: [Event]) -> [Event]{
+     var getEvents: [Event] = []
+     for event in eventsCountryA {
+        getEvents.append(event)
+     }
+        for event in eventsCountryB {
+            getEvents.append(event)
+        }
+        return getEvents
+     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToTeamViewController" {
             let vController = segue.destination as! TeamViewController
@@ -106,6 +120,7 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 }
         }
     }
+    
     
     /*
     // MARK: - Navigation
