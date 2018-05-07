@@ -8,8 +8,8 @@ class Match {
     var countryB: Country
     var resultCountryA: String?
     var resultCountryB : String?
-    var eventA: [Event]?
-    var eventB: [Event]?
+    var event: [Event]
+
     
     //Match without results
     init (date: String, group:String,stadium: Stadium, countryA:Country, countryB: Country) {
@@ -21,14 +21,14 @@ class Match {
     }
     
     //Match without results and events
-    init (date: String, group:String,stadium: Stadium, countryA:Country, countryB: Country, eventA: [Event], eventB:[Event]) {
+    init (date: String, group:String,stadium: Stadium, countryA:Country, countryB: Country, event: [Event]) {
         self.date = date
         self.stadium = stadium
         self.group = group
         self.countryA = countryA
         self.countryB = countryB
-        self.eventA = eventA
-        self.eventB = eventB
+        self.event = event
+        
     }
     
     //Match with results
@@ -43,14 +43,13 @@ class Match {
     }
     
     //Match with results and events
-    init (date: String, group:String,stadium: Stadium, countryA:Country, countryB: Country, eventA: [Event], eventB:[Event], resultCountryA: String, resultCountryB: String) {
+    init (date: String, group:String,stadium: Stadium, countryA:Country, countryB: Country, event: [Event], resultCountryA: String, resultCountryB: String) {
         self.date = date
         self.stadium = stadium
         self.group = group
         self.countryA = countryA
         self.countryB = countryB
-        self.eventA = eventA
-        self.eventB = eventB
+        self.event = event
         self.resultCountryA = resultCountryA
         self.resultCountryB = resultCountryB
     }

@@ -22,8 +22,9 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     var countrySelected = true
     var match : Match?
-    var eventsCountryA: [Event]?
-    var eventsCountryB: [Event]?
+    var events: [Event]?
+    //var eventsCountryB: [Event]?
+    
     
     @IBAction func countryAButton(_ sender: UIButton!) {
         countrySelected = true
@@ -52,50 +53,59 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
             let imagenB = UIImage (named: match.countryB.shield)
             countryAButton.setImage(imagenA,for: UIControlState.normal)
             countryBButton.setImage(imagenB,for: UIControlState.normal)
-            eventsCountryA = match.eventA
-            eventsCountryB = match.eventB
+            self.events = match.event
+            //eventsCountryB = match.eventB
         }
         timeToTimeTableView.reloadData()
         
         
     }
     
-    //return the number of rows in a given section of a table view
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (eventsCountryA?.count)!
-        //return getAllEvents(eventsCountryA: eventsCountryA!, eventsCountryB: eventsCountryB!).count
-    }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {        
-        let cellA = tableView.dequeueReusableCell(withIdentifier: "timeToTimeCountryACell", for: indexPath) as? TimeToTimeATableViewCell
-        //let cellB = tableView.dequeueReusableCell(withIdentifier: "timeToTimeCountryBCell", for: indexPath) as? TimeToTimeBTableViewCell
-        
-        //Muestra todos los eventos pero de un mismo lado
-        //let eventA = getAllEvents(eventsCountryA: eventsCountryA!, eventsCountryB: eventsCountryB!)[indexPath.row]
-        let eventA = eventsCountryA![indexPath.row]
-        
-        //let eventB = eventsCountryB![indexPath.row]
-        
-        //if (eventsCountryA!.count != 0 ){
-            cellA?.iconALabel.text = eventA.icon
-            cellA?.playerNameLabel.text = eventA.player
-            cellA?.minuteLabel.text = eventA.time
-            return cellA!
-        /*} else {
-            cellB?.iconBLabel.text = eventB.icon
-            cellB?.playerNameLabel.text = eventB.player
-            cellB?.minuteLabel.text = eventB.time
-            return cellB!
-        }*/
+    
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        var event = [events]
+        return event.count
     }
     
+    //return the number of rows in a given section of a table view
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        var event = [events]
+        return event [section]!.count
+     }
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var event = events![indexPath.row]
+        if (event.country = countryALabel.text){
+            let cell = tableView.dequeueReusableCell(withIdentifier: "timeToTimeCountryACell", for: indexPath) as? TimeToTimeATableViewCell
+            let eventA = sections [indexPath.section]![indexPath.row]
+            cell?.iconALabel.text = eventA.icon
+            cell?.playerNameLabel.text = eventA.player
+            cell?.minuteLabel.text = eventA.time
+            return cell!
+        }else{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "timeToTimeCountryBCell", for: indexPath) as? TimeToTimeBTableViewCell
+            let eventB = sections [indexPath.section]![indexPath.row]
+            cell?.iconALabel.text = eventA.icon
+            cell?.playerNameLabel.text = eventA.player
+            cell?.minuteLabel.text = eventA.time
+            return cell!
+        }
+        
+
+    }
+        
+        
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 40
     }
     
-    override func didReceiveMemoryWarning() {
+    /*override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
+    }*/
     
     func getAllEvents(eventsCountryA: [Event], eventsCountryB: [Event]) -> [Event]{
      var getEvents: [Event] = []
@@ -107,7 +117,7 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
         }
         return getEvents
      }
-    
+/*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToTeamViewController" {
             let vController = segue.destination as! TeamViewController
@@ -120,6 +130,9 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 }
         }
     }
+*/
+
+
     
     
     /*
@@ -131,5 +144,6 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
         // Pass the selected object to the new view controller.
     }
     */
-
 }
+
+
