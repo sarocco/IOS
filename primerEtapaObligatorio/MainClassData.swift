@@ -72,18 +72,18 @@ class MainClassData {
         
         
         
-        var uruguay = Country(name:"Uruguay",players: uruPlayers, dt: DT(name: "Oscar Tabarez",identifier: "DT"), shield:"Uruguay", abbreviation: "URU", nextMatches: []);
+        let uruguay = Country(name:"Uruguay",players: uruPlayers, dt: DT(name: "Oscar Tabarez",identifier: "DT"), shield:"Uruguay", abbreviation: "URU", nextMatches: []);
         
         
-        var rusia = Country(name:"Rusia",players: rusPlayers, dt: DT(name: "S. Cherchesov",identifier: "DT"), shield:"Rusia", abbreviation: "RUS", nextMatches: []);
-        
-        
-        
-        var arabia = Country(name:"Arabia Saudi",players: araPlayers, dt: DT(name: "Juan Antonio Pizzi",identifier: "DT"), shield:"Arabia Saudi", abbreviation: "ARA", nextMatches: []);
+        let rusia = Country(name:"Rusia",players: rusPlayers, dt: DT(name: "S. Cherchesov",identifier: "DT"), shield:"Rusia", abbreviation: "RUS", nextMatches: []);
         
         
         
-        var egipto = Country(name:"Egipto",players: egiPlayers, dt: DT(name: "Héctor Cúper",identifier: "DT"), shield:"Egipto", abbreviation: "EGI", nextMatches: []);
+        let arabia = Country(name:"Arabia Saudi",players: araPlayers, dt: DT(name: "Juan Antonio Pizzi",identifier: "DT"), shield:"Arabia Saudi", abbreviation: "ARA", nextMatches: []);
+        
+        
+        
+        let egipto = Country(name:"Egipto",players: egiPlayers, dt: DT(name: "Héctor Cúper",identifier: "DT"), shield:"Egipto", abbreviation: "EGI", nextMatches: []);
         
         
         
@@ -102,14 +102,10 @@ class MainClassData {
         
         
         var thirdMatch = Match (date:"20 de Mayo 2018 18:04", group:"Grupo A", stadium: Stadium(name:"Samara Arena", stadiumImage: "Samara Arena"), countryA: arabia, countryB: egipto)
-        
-        
-        
+    
         uruguay.nextMatches.append(secondMatch)
         
-        
-        
-        var matches = [firstMatch, secondMatch, thirdMatch]
+        let matches = [firstMatch, secondMatch, thirdMatch]
         
         
         

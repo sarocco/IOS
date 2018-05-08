@@ -38,6 +38,7 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
             countryLabel.text = country.name
             players = country.players
             dtNameLabel.text = country.dt.name
+            nextMatches = country.nextMatches
         }
         playersTableView.reloadData()
         collectionNextMatches.reloadData()
@@ -82,36 +83,35 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
         return 1
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5 //nextMatches.count
+        return nextMatches!.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "idNextMatch", for: indexPath) as! NextMatchesCollectionViewCell
         cell.layer.masksToBounds = true
         cell.layer.cornerRadius = 10
-        /*let match = nextMatches![indexPath.row]
-        cell.countryImage.image = UIImage(named: match.countryA.shield)
-        cell.countryName.text = match.countryA.name
-        cell.matchDate.text = match.date
-        cell.stadiumName.text = match.stadium.name*/
-        return cell
-    }
-    
-    
-    
-    
-    
-    
-    
-    /*func getNextMatches() -> [Match]{
-     var nextMatches: [Match] = []
-        for match in matches{
-            if (compareDate(date: match.date)){
-                if (countryLabel.text == match.countryA.name || countryLabel.text == match.countryB.name){
-                    nextMatches.append(match)
-                }
-            }
+        let match = nextMatches![indexPath.row]
+        if (country?.name == match.countryA.name){
+            cell.countryImage.image = UIImage(named: match.countryB.shield)
+            cell.countryName.text = match.countryB.name
+            cell.matchDate.text = match.date
+            cell.stadiumName.text = match.stadium.name
+            return cell
+        }else{
+            cell.countryImage.image = UIImage(named: match.countryA.shield)
+            cell.countryName.text = match.countryA.name
+            cell.matchDate.text = match.date
+            cell.stadiumName.text = match.stadium.name
+            return cell
+            
         }
-        return nextMatches
-    }*/
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let match = nextMatches![indexPath.row]
+        let vController = storyboard?.instantiateViewController(withIdentifier: "IdentifierMatchViewController") as? MatchViewController
+        self.navigationController?.pushViewController(vController!, animated: true)
+        vController?.match = match
+        vController?.eventsCountryA = match.eventA
+        vController?.eventsCountryB = match.eventB
+    }
     
 }

@@ -62,13 +62,10 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
     }
     
-    
-
-    
     //return the number of rows in a given section of a table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let events = [eventsCountryA, eventsCountryB]
-        return events [section]!.count
+        return events.count
      }
     
     
@@ -77,14 +74,7 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
             return cell!
     }
-
     
-        
-
-    
-        
-        
-
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 40
     }
