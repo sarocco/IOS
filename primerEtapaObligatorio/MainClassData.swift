@@ -87,9 +87,9 @@ class MainClassData {
         
         
         
-        let eventsUru = [Event(icon: "⚽️",player: "Luis Suarez",time: "3'"),Event(icon: "⚽️",player: "Diego Godín",time: "20'"), Event(icon: "🛑",player: "Martín Campaña",time: "20'"), Event(icon: "🔶",player: "Diego Godín",time: "28'")]
+        let eventsUru = [Event(icon: "⚽️",player: "Luis Suarez",time: "3'"),Event(icon: "⚽️",player: "Diego Godín",time: "20'"), Event(icon: "🛑",player: "Martín Campaña",time: "25'"), Event(icon: "🔶",player: "Diego Godín",time: "28'")]
         
-        let eventsRus = [Event(icon: "🛑",player: "I. Akinfeev",time: "20'")]
+        let eventsRus = [Event(icon: "🛑",player: "I. Akinfeev",time: "20'"), Event(icon: "🔶",player: "I. R. Neustädter",time: "29'")]
         
         
         

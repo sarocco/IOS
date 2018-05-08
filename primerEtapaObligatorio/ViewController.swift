@@ -85,17 +85,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         vController?.eventsCountryB = match.eventB
         
     }
-    /*open func getNextMatches(country: Country) -> [Match]{
-        var nextMatches: [Match] = []
-        for match in matches{
-            if (compareDate(date: match.date)){
-                if (match.countryA.name == country.name){
-                    nextMatches.append(match)
-                }
-            }
-        }
-        return nextMatches
-    }*/
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

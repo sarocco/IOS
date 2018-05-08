@@ -61,39 +61,51 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         
     }
+    func getAllEvents(eventsCountryA: [Event], eventsCountryB: [Event]) -> [Event]{
+        var getEvents: [Event] = []
+        //let start = 0
+        for event in eventsCountryA {
+           // if(Int(event.time)! < start){
+                
+            //}
+            getEvents.append(event)
+        }
+        for event in eventsCountryB {
+            getEvents.append(event)
+        }
+        return getEvents
+    }
     
     //return the number of rows in a given section of a table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let events = [eventsCountryA, eventsCountryB]
+        let events = getAllEvents(eventsCountryA: eventsCountryA!, eventsCountryB: eventsCountryB!)
         return events.count
      }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "timeToTimeCountryACell", for: indexPath) as? TimeToTimeATableViewCell
-
+        let events = getAllEvents(eventsCountryA: eventsCountryA!, eventsCountryB: eventsCountryB!)
+        let event = events[indexPath.row]
+        for i in eventsCountryA!{
+            if (event.time == i.time && event.player == i.player && event.icon == i.icon){
+                let cell = tableView.dequeueReusableCell(withIdentifier: "timeToTimeCountryACell", for: indexPath) as? TimeToTimeATableViewCell
+                cell?.iconALabel.text = event.icon
+                cell?.minuteLabel.text = event.time
+                cell?.playerNameLabel.text = event.player
             return cell!
+            }
+        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "timeToTimeCountryBCell", for: indexPath) as? TimeToTimeBTableViewCell
+        cell?.iconBLabel.text = event.icon
+        cell?.minuteLabel.text = event.time
+        cell?.playerNameLabel.text = event.player
+        return cell!
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 40
     }
-    
-    /*override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }*/
-    
-    func getAllEvents(eventsCountryA: [Event], eventsCountryB: [Event]) -> [Event]{
-     var getEvents: [Event] = []
-     for event in eventsCountryA {
-        getEvents.append(event)
-     }
-        for event in eventsCountryB {
-            getEvents.append(event)
-        }
-        return getEvents
-     }
+
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToTeamViewController" {
