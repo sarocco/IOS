@@ -27,15 +27,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.reloadData()
     }
     
+    //Compare today with the match date
     func compareDate(date:String) -> Bool {
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "es_ES")
         dateFormatter.dateFormat = "dd 'de' MMMM yyyy HH:mm"
-        
         // Create a date object from the string
         if let date = dateFormatter.date(from: date) {
             
-            if date < Date() {
+            if date <= Date() {
                 return true
             } else {
                 return false
@@ -47,6 +47,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellMatch", for:indexPath) as? MainCellTableViewCell
+        
         // Access to each Match and displays the data of each match in one row of the table
         let match = matches[indexPath.row]
         cell?.labelDate.text = match.date
@@ -61,9 +62,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if (compareDate(date: match.date!)){
             cell?.labelResultA.text = match.resultCountryA
             cell?.labelResultB.text = match.resultCountryB
+        } else {
+            cell?.labelResultA.text = " "
+            cell?.labelResultB.text = " "
         }
-        // Setup a date formatter to match the format of your string
-
         return cell!
     }
     
