@@ -1,7 +1,7 @@
 import Foundation
 
 class Match {
-    var date: String
+    var date: String?
     var stadium: Stadium
     var group: String
     var countryA: Country
@@ -10,7 +10,6 @@ class Match {
     var resultCountryB : String?
     var eventA: [Event]?
     var eventB: [Event]?
-
     
     //Match without results
     init (date: String, group:String,stadium: Stadium, countryA:Country, countryB: Country) {
@@ -31,17 +30,6 @@ class Match {
         self.eventA = eventA
         self.eventB = eventB
         
-    }
-    
-    //Match with results
-    init (date: String, group:String,stadium: Stadium, countryA:Country, countryB: Country, resultCountryA: String, resultCountryB: String) {
-        self.date = date
-        self.stadium = stadium
-        self.group = group
-        self.countryA = countryA
-        self.countryB = countryB
-        self.resultCountryA = resultCountryA
-        self.resultCountryB = resultCountryB
     }
     
     //Match with results and events

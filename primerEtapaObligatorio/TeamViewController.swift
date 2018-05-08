@@ -10,6 +10,7 @@ import UIKit
 
 class TeamViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
+    //Outlets
     @IBOutlet weak var countryLabel: UILabel!
     @IBOutlet weak var shield: UIImageView!
     @IBOutlet weak var playersTableView: UITableView!
@@ -19,10 +20,12 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var nextMatchesLabel: UILabel!
     @IBOutlet weak var collectionNextMatches: UICollectionView!    
 
-    var country: Country?
-    var players: [Player] = []
-    var nextMatches: [Match]? = []
+    //Variables
+    var country: Country!
+    var players: [Player]! = []
+    var nextMatches: [Match]! = []
     
+    //Loads data
     override func viewDidLoad() {
         super.viewDidLoad()
         playersTableView.delegate = self
@@ -44,7 +47,7 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
         collectionNextMatches.reloadData()
     }
     
-    func compareDate(date:String) -> Bool {
+    /*func compareDate(date:String) -> Bool {
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "es_ES")
         dateFormatter.dateFormat = "dd 'de' MMMM yyyy HH:mm"
@@ -59,22 +62,24 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
         }
         return false
-    }
+    }*/
 
     //return the number of rows in a given section of a table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return country!.players.count
+        return country.players.count
     }
    
+    //Set the information inside the table
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "playerId", for: indexPath) as? PlayersTableViewCell
-        let player = country?.players[indexPath.row]
-        cell?.numberLabel.text = player?.number
-        cell?.playerLabel.text = player?.name
-        cell?.nameTeamLabel.text = player?.nameTeam
+        let player = country.players[indexPath.row]
+        cell?.numberLabel.text = player.number
+        cell?.playerLabel.text = player.name
+        cell?.nameTeamLabel.text = player.nameTeam
         return cell!
     }
     
+    //Set the height of each row
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
     }
@@ -82,14 +87,18 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
+    
+    //Returns how many collections are needed
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return nextMatches!.count
+        return nextMatches.count
     }
+    
+    //Loads the information of the NextMatches in each collection cell
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "idNextMatch", for: indexPath) as! NextMatchesCollectionViewCell
         cell.layer.masksToBounds = true
         cell.layer.cornerRadius = 10
-        let match = nextMatches![indexPath.row]
+        let match = nextMatches[indexPath.row]
         if (country?.name == match.countryA.name){
             cell.countryImage.image = UIImage(named: match.countryB.shield)
             cell.countryName.text = match.countryB.name
@@ -105,8 +114,10 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
             
         }
     }
+    
+    //Send the information of the match you select to the MechView controller
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let match = nextMatches![indexPath.row]
+        let match = nextMatches[indexPath.row]
         let vController = storyboard?.instantiateViewController(withIdentifier: "IdentifierMatchViewController") as? MatchViewController
         self.navigationController?.pushViewController(vController!, animated: true)
         vController?.match = match

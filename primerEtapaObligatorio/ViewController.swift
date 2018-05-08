@@ -14,17 +14,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     //Outlet tableView
     @IBOutlet weak var tableView: UITableView!
     
+    //Array of empty matches objects
     var matches:[Match] = []
- 
     
     //constructor
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Loads the matches array with all the data of the MainClassData
         matches = MainClassData.loadData()
         tableView.delegate = self
         tableView.dataSource = self
         tableView.reloadData()
-        
     }
     
     func compareDate(date:String) -> Bool {
@@ -47,9 +47,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellMatch", for:indexPath) as? MainCellTableViewCell
-    
+        // Access to each Match and displays the data of each match in one row of the table
         let match = matches[indexPath.row]
-        //Get the name of the Country of the Matches array
         cell?.labelDate.text = match.date
         cell?.labelStadium.text = match.stadium.name
         cell?.labelGroup.text = match.group
@@ -58,7 +57,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell?.pictureCountryOne.image = UIImage(named: match.countryA.shield)
         cell?.labelCountryTwo.text = match.countryB.name
         cell?.pictureCountryTwo.image = UIImage(named: match.countryB.shield)
-        if (compareDate(date: match.date)){
+        
+        if (compareDate(date: match.date!)){
             cell?.labelResultA.text = match.resultCountryA
             cell?.labelResultB.text = match.resultCountryB
         }
@@ -72,10 +72,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return matches.count
     }
     
+    //Set the height of the row
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
     }
     
+    //Send the information of match you select to the next controller: MatchViewController
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let match = matches[indexPath.row]
         let vController = storyboard?.instantiateViewController(withIdentifier: "IdentifierMatchViewController") as? MatchViewController

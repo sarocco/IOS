@@ -9,6 +9,8 @@
 import UIKit
 
 class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+    
+    //Outlets
     @IBOutlet weak var countryVsCountryLabel: UILabel!
     @IBOutlet weak var stadiumImage: UIImageView!
     @IBOutlet weak var stadiumName: UILabel!
@@ -20,12 +22,13 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var countryAButton: UIButton!
     @IBOutlet weak var countryBButton: UIButton!
     
+    //Variables
     var countrySelected = true
-    var match : Match?
-    var eventsCountryA: [Event]?
-    var eventsCountryB: [Event]?
+    var match : Match!
+    var eventsCountryA: [Event]!
+    var eventsCountryB: [Event]!
     
-    
+    //Actions
     @IBAction func countryAButton(_ sender: UIButton!) {
         countrySelected = true
         performSegue(withIdentifier: "segueToTeamViewController", sender: self)
@@ -35,12 +38,12 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
         performSegue(withIdentifier: "segueToTeamViewController", sender: self)
     }
     
+    //Loads the data
     override func viewDidLoad() {
         super.viewDidLoad()
         
         timeToTimeTableView.delegate = self
         timeToTimeTableView.dataSource = self
-        
         
         // if let match y cargar datos desde ese objeto
         if let match = match {
@@ -55,19 +58,15 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
             countryBButton.setImage(imagenB,for: UIControlState.normal)
             eventsCountryA = match.eventA
             eventsCountryB = match.eventB
-          
+            countryVsCountryLabel.text = match.countryA.abbreviation + "vs" + match.countryB.abbreviation
         }
         timeToTimeTableView.reloadData()
-        
-        
     }
+    
+    //Gets all the events of this match
     func getAllEvents(eventsCountryA: [Event], eventsCountryB: [Event]) -> [Event]{
         var getEvents: [Event] = []
-        //let start = 0
         for event in eventsCountryA {
-           // if(Int(event.time)! < start){
-                
-            //}
             getEvents.append(event)
         }
         for event in eventsCountryB {
@@ -75,16 +74,16 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
         }
         return getEvents
     }
-    
+
     //return the number of rows in a given section of a table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let events = getAllEvents(eventsCountryA: eventsCountryA!, eventsCountryB: eventsCountryB!)
+        let events = getAllEvents(eventsCountryA: eventsCountryA, eventsCountryB: eventsCountryB)
         return events.count
      }
     
-    
+    //Loads all the data en each row, dependig if the event is of countryA or CountryB
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let events = getAllEvents(eventsCountryA: eventsCountryA!, eventsCountryB: eventsCountryB!)
+        let events = getAllEvents(eventsCountryA: eventsCountryA, eventsCountryB: eventsCountryB)
         let event = events[indexPath.row]
         for i in eventsCountryA!{
             if (event.time == i.time && event.player == i.player && event.icon == i.icon){
@@ -102,37 +101,25 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return cell!
     }
     
+    //Set the height of the row
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 40
     }
 
-
+    //Send information needed in next viewController
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToTeamViewController" {
             let vController = segue.destination as! TeamViewController
             //Send the country to the TeamViewController
                 if countrySelected {
-                    vController.country = match?.countryA
+                    vController.country = match.countryA
                 }
                 else {
-                    vController.country = match?.countryB
+                    vController.country = match.countryB
                 }
         }
     }
-
-
-
     
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 }
 
 
