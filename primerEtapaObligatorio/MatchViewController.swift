@@ -53,8 +53,9 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
             let imagenB = UIImage (named: match.countryB.shield)
             countryAButton.setImage(imagenA,for: UIControlState.normal)
             countryBButton.setImage(imagenB,for: UIControlState.normal)
-            self.events = match.event
-            //eventsCountryB = match.eventB
+            eventsCountryA = match.eventA
+            eventsCountryB = match.eventB
+          
         }
         timeToTimeTableView.reloadData()
         
@@ -62,39 +63,25 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        var event = [events]
-        return event.count
-    }
+
     
     //return the number of rows in a given section of a table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        var event = [events]
-        return event [section]!.count
+        let events = [eventsCountryA, eventsCountryB]
+        return events [section]!.count
      }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var event = events![indexPath.row]
-        if (event.country = countryALabel.text){
-            let cell = tableView.dequeueReusableCell(withIdentifier: "timeToTimeCountryACell", for: indexPath) as? TimeToTimeATableViewCell
-            let eventA = sections [indexPath.section]![indexPath.row]
-            cell?.iconALabel.text = eventA.icon
-            cell?.playerNameLabel.text = eventA.player
-            cell?.minuteLabel.text = eventA.time
+        let cell = tableView.dequeueReusableCell(withIdentifier: "timeToTimeCountryACell", for: indexPath) as? TimeToTimeATableViewCell
+
             return cell!
-        }else{
-            let cell = tableView.dequeueReusableCell(withIdentifier: "timeToTimeCountryBCell", for: indexPath) as? TimeToTimeBTableViewCell
-            let eventB = sections [indexPath.section]![indexPath.row]
-            cell?.iconALabel.text = eventA.icon
-            cell?.playerNameLabel.text = eventA.player
-            cell?.minuteLabel.text = eventA.time
-            return cell!
-        }
+    }
+
+    
         
 
-    }
+    
         
         
 
@@ -117,7 +104,7 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
         }
         return getEvents
      }
-/*
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToTeamViewController" {
             let vController = segue.destination as! TeamViewController
@@ -130,7 +117,7 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 }
         }
     }
-*/
+
 
 
     
