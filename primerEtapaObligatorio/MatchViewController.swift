@@ -21,7 +21,8 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var timeToTimeTableView: UITableView!
     @IBOutlet weak var countryAButton: UIButton!
     @IBOutlet weak var countryBButton: UIButton!
-    
+    @IBOutlet weak var resultA: UILabel!
+    @IBOutlet weak var resultB: UILabel!
     //Variables
     var countrySelected = true
     var match : Match!
@@ -45,7 +46,6 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
         timeToTimeTableView.delegate = self
         timeToTimeTableView.dataSource = self
         
-        // if let match y cargar datos desde ese objeto
         if let match = match {
             countryALabel.text = match.countryA.name
             countryBLabel.text = match.countryB.name
@@ -59,6 +59,16 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
             eventsCountryA = match.eventA
             eventsCountryB = match.eventB
             countryVsCountryLabel.text = match.countryA.abbreviation + "vs" + match.countryB.abbreviation
+            //Identify who is the winner to bold the result
+            if let resultCountryA = match.resultCountryA?.hashValue , let resultCountryB = match.resultCountryB?.hashValue {
+                if (resultCountryA > resultCountryB){
+                    resultA.font = UIFont.boldSystemFont(ofSize: 16.0)
+                } else {
+                    resultB.font = UIFont.boldSystemFont(ofSize: 16.0)
+                }
+            }
+            resultA.text = match.resultCountryA?.description
+            resultB.text = match.resultCountryB?.description
         }
         timeToTimeTableView.reloadData()
     }
@@ -83,20 +93,22 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     //Loads all the data en each row, dependig if the event is of countryA or CountryB
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let events = getAllEvents(eventsCountryA: eventsCountryA, eventsCountryB: eventsCountryB)
+        var events = getAllEvents(eventsCountryA: eventsCountryA, eventsCountryB: eventsCountryB)
+        //sort the events by time
+        events = events.sorted(by: {$0.time < $1.time})
         let event = events[indexPath.row]
         for i in eventsCountryA!{
             if (event.time == i.time && event.player == i.player && event.icon == i.icon){
                 let cell = tableView.dequeueReusableCell(withIdentifier: "timeToTimeCountryACell", for: indexPath) as? TimeToTimeATableViewCell
                 cell?.iconALabel.text = event.icon
-                cell?.minuteLabel.text = event.time
+                cell?.minuteLabel.text = event.time.description + "'"
                 cell?.playerNameLabel.text = event.player
             return cell!
             }
         }
         let cell = tableView.dequeueReusableCell(withIdentifier: "timeToTimeCountryBCell", for: indexPath) as? TimeToTimeBTableViewCell
         cell?.iconBLabel.text = event.icon
-        cell?.minuteLabel.text = event.time
+        cell?.minuteLabel.text = event.time.description + "'"
         cell?.playerNameLabel.text = event.player
         return cell!
     }

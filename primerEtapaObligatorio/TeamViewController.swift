@@ -47,23 +47,6 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
         collectionNextMatches.reloadData()
     }
     
-    /*func compareDate(date:String) -> Bool {
-        let dateFormatter = DateFormatter()
-        dateFormatter.locale = Locale(identifier: "es_ES")
-        dateFormatter.dateFormat = "dd 'de' MMMM yyyy HH:mm"
-        
-        // Create a date object from the string
-        if let date = dateFormatter.date(from: date) {
-            
-            if date < Date() {
-                return true
-            } else {
-                return false
-            }
-        }
-        return false
-    }*/
-
     //return the number of rows in a given section of a table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return country.players.count

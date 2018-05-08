@@ -11,9 +11,9 @@ import UIKit
 class Event {
     var icon: String
     var player: String
-    var time: String
+    var time: Int
     
-    init (icon: String, player: String,time: String) {
+    init (icon: String, player: String,time: Int) {
         self.icon = icon
         self.player = player
         self.time = time

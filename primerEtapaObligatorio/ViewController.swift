@@ -59,8 +59,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell?.labelCountryTwo.text = match.countryB.name
         cell?.pictureCountryTwo.image = UIImage(named: match.countryB.shield)
         if (compareDate(date: match.date!)){
+            //Identify who is the winner to bold the result
             if let resultA = match.resultCountryA?.hashValue , let resultB = match.resultCountryB?.hashValue {
-                // match.resultCountryA?.hashValue and  match.resultCountryB?.hashValue were not nil, and its value is now stored in resultA and resultB
                 if (resultA > resultB){
                     cell?.labelResultA.font = UIFont.boldSystemFont(ofSize: 16.0)
                 } else {

@@ -158,7 +158,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2L-Pf-6BE">
-                                <rect key="frame" x="153.5" y="309.5" width="14" height="14.5"/>
+                                <rect key="frame" x="153.5" y="333" width="14" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -307,6 +307,18 @@ Unicode: U+1F6D1, UTF-8: F0 9F 9B 91</string>
                                     <action selector="countryBButton:" destination="KLy-XS-SSR" eventType="touchUpInside" id="mWJ-Nh-gQT"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1q-pN-slk">
+                                <rect key="frame" x="117" y="436" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afY-vw-50I">
+                                <rect key="frame" x="213.5" y="436" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -315,11 +327,12 @@ Unicode: U+1F6D1, UTF-8: F0 9F 9B 91</string>
                             <constraint firstItem="BfX-bJ-d62" firstAttribute="leading" secondItem="lny-ZG-8wL" secondAttribute="leading" constant="20" id="2Qk-in-KDq"/>
                             <constraint firstItem="cRc-Za-ErS" firstAttribute="top" secondItem="aqN-Fh-Dme" secondAttribute="bottom" constant="5" id="2yY-Ic-hQv"/>
                             <constraint firstItem="cRc-Za-ErS" firstAttribute="centerX" secondItem="lny-ZG-8wL" secondAttribute="centerX" id="49y-f5-YDd"/>
-                            <constraint firstItem="b2L-Pf-6BE" firstAttribute="bottom" secondItem="AFo-eF-uEV" secondAttribute="top" constant="-150" id="5YQ-fe-Nh5"/>
                             <constraint firstItem="aqN-Fh-Dme" firstAttribute="trailing" secondItem="lny-ZG-8wL" secondAttribute="trailing" id="Azo-uD-nQa"/>
                             <constraint firstItem="baa-FM-ZQu" firstAttribute="centerX" secondItem="b2L-Pf-6BE" secondAttribute="centerX" id="BQ1-KS-b0o"/>
                             <constraint firstItem="Ujk-U8-MPN" firstAttribute="top" secondItem="BfX-bJ-d62" secondAttribute="bottom" constant="15" id="D70-cj-b87"/>
                             <constraint firstItem="s9J-94-YUe" firstAttribute="top" secondItem="DYf-0q-HqE" secondAttribute="bottom" constant="15" id="GxE-1x-bxo"/>
+                            <constraint firstItem="s9J-94-YUe" firstAttribute="leading" secondItem="afY-vw-50I" secondAttribute="trailing" constant="5" id="IyX-m0-b1L"/>
+                            <constraint firstItem="afY-vw-50I" firstAttribute="bottom" secondItem="s9J-94-YUe" secondAttribute="bottom" id="KmQ-QL-Zqt"/>
                             <constraint firstItem="AFo-eF-uEV" firstAttribute="top" secondItem="lny-ZG-8wL" secondAttribute="top" constant="410" id="Oqu-bf-Vjs"/>
                             <constraint firstItem="AFo-eF-uEV" firstAttribute="leading" secondItem="lny-ZG-8wL" secondAttribute="leading" id="PsU-7g-vL9"/>
                             <constraint firstItem="aqN-Fh-Dme" firstAttribute="top" secondItem="lny-ZG-8wL" secondAttribute="top" constant="30" id="Sio-xV-DTF"/>
@@ -328,12 +341,15 @@ Unicode: U+1F6D1, UTF-8: F0 9F 9B 91</string>
                             <constraint firstItem="AFo-eF-uEV" firstAttribute="bottom" secondItem="lny-ZG-8wL" secondAttribute="bottom" id="bqM-v2-uMd"/>
                             <constraint firstItem="7KU-rX-hgz" firstAttribute="leading" secondItem="lny-ZG-8wL" secondAttribute="leading" id="eNq-kj-tHA"/>
                             <constraint firstItem="AFo-eF-uEV" firstAttribute="trailing" secondItem="lny-ZG-8wL" secondAttribute="trailing" id="ehD-3k-0Ot"/>
+                            <constraint firstItem="D1q-pN-slk" firstAttribute="bottom" secondItem="Ujk-U8-MPN" secondAttribute="bottom" id="keJ-qK-OIj"/>
                             <constraint firstItem="baa-FM-ZQu" firstAttribute="bottom" secondItem="Ujk-U8-MPN" secondAttribute="bottom" constant="30" id="l4B-Ei-sKy"/>
+                            <constraint firstItem="b2L-Pf-6BE" firstAttribute="centerY" secondItem="BfX-bJ-d62" secondAttribute="centerY" id="nsl-rz-Dfg"/>
                             <constraint firstItem="Ujk-U8-MPN" firstAttribute="centerX" secondItem="BfX-bJ-d62" secondAttribute="centerX" id="oKC-CF-2bL"/>
                             <constraint firstItem="lny-ZG-8wL" firstAttribute="trailing" secondItem="7KU-rX-hgz" secondAttribute="trailing" id="pRZ-8a-hbd"/>
                             <constraint firstItem="DYf-0q-HqE" firstAttribute="top" secondItem="cRc-Za-ErS" secondAttribute="bottom" constant="15" id="pdD-bl-aEi"/>
                             <constraint firstItem="s9J-94-YUe" firstAttribute="centerX" secondItem="DYf-0q-HqE" secondAttribute="centerX" id="qPl-lQ-LD7"/>
                             <constraint firstItem="aqN-Fh-Dme" firstAttribute="leading" secondItem="lny-ZG-8wL" secondAttribute="leading" id="tNX-c2-Hf7"/>
+                            <constraint firstItem="D1q-pN-slk" firstAttribute="leading" secondItem="Ujk-U8-MPN" secondAttribute="trailing" constant="5" id="us1-EY-Oci"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lny-ZG-8wL"/>
                     </view>
@@ -345,6 +361,8 @@ Unicode: U+1F6D1, UTF-8: F0 9F 9B 91</string>
                         <outlet property="countryBLabel" destination="s9J-94-YUe" id="fXk-TG-gjM"/>
                         <outlet property="countryVsCountryLabel" destination="7KU-rX-hgz" id="Ev2-sc-ZuN"/>
                         <outlet property="dateTimeLabel" destination="baa-FM-ZQu" id="AF2-on-pgF"/>
+                        <outlet property="resultA" destination="D1q-pN-slk" id="eIm-jG-OOo"/>
+                        <outlet property="resultB" destination="afY-vw-50I" id="aHY-27-d89"/>
                         <outlet property="stadiumImage" destination="aqN-Fh-Dme" id="1Ek-kn-AbL"/>
                         <outlet property="stadiumName" destination="cRc-Za-ErS" id="3M4-Ig-Hc5"/>
                         <outlet property="timeToTimeTableView" destination="AFo-eF-uEV" id="OKP-yC-HYW"/>
@@ -469,7 +487,7 @@ Unicode: U+1F6D1, UTF-8: F0 9F 9B 91</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9yS-h0-OK4">
-                                                    <rect key="frame" x="10" y="5" width="70" height="70"/>
+                                                    <rect key="frame" x="10" y="15" width="70" height="70"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BuG-Mn-gkw">
                                                             <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
