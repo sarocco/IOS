@@ -22,8 +22,8 @@ class MatchViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     var countrySelected = true
     var match : Match?
-    var events: [Event]?
-    //var eventsCountryB: [Event]?
+    var eventsCountryA: [Event]?
+    var eventsCountryB: [Event]?
     
     
     @IBAction func countryAButton(_ sender: UIButton!) {
